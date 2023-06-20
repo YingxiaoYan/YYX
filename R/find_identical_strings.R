@@ -2,7 +2,7 @@
 #'@param x a string vector
 #'@param n how long
 #'@param specific specific strings
-
+#'@export
 find_identical_strings<-function(x,
                                  n=2,
                                  specific=NULL){
