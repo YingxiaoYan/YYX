@@ -29,22 +29,22 @@
 #trick=5
 #dataX=Xotu
 #dataY=Yotu
-empty_name<-"vector_1<-vector()
-            vector_2<-vector()"
-some_operation_before<-"dataYPerm = StatTools::sampling_from_distribution(dataY)"
-main_function<-"perm=MUVR(X=dataX,Y=dataYPerm,method='RF',
-                DA=T, modReturn = T, nRep =trick, nOuter=3,varRatio=0.3)
-               if(rep==sample(c(1:2),1)){trick=trick-1; stop('deliberatly give error')}"
-record_values<-"vector_1<- c(vector_1,perm$ber['min'])
-vector_2<- c(vector_2,perm$miss['min'])"
-output<-"list(vector_1,vector_2)"
-sss<-ignore_loop_error(rep,
-                 some_operation_before,
-                 empty_name,
-                 main_function,
-                 record_values,
-                NULL,
-                 output)
+#empty_name<-"vector_1<-vector()
+#            vector_2<-vector()"
+#some_operation_before<-"dataYPerm = StatTools::sampling_from_distribution(dataY)"
+#main_function<-"perm=MUVR(X=dataX,Y=dataYPerm,method='RF',
+#                DA=T, modReturn = T, nRep =trick, nOuter=3,varRatio=0.3)
+#               if(rep==sample(c(1:2),1)){trick=trick-1; stop('deliberatly give error')}"
+#record_values<-"vector_1<- c(vector_1,perm$ber['min'])
+#vector_2<- c(vector_2,perm$miss['min'])"
+#output<-"list(vector_1,vector_2)"
+#sss<-ignore_loop_error(rep,
+#                 some_operation_before,
+#                 empty_name,
+#                 main_function,
+#                 record_values,
+#                NULL,
+#                 output)
 
 ignore_loop_error<-function(rep,
                             empty_name,

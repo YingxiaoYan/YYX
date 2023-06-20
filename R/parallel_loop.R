@@ -129,7 +129,7 @@ if( parallel_option=="doParallel"){
 
 
 
-  }
+
 v<-as.list(rty)
 Reduce(c,v)
   eval(parse(text=paste(afterloop_code,";time2=proc.time()")))
