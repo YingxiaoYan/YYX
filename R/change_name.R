@@ -1,7 +1,7 @@
 ## be careful about the sequence about the name format you want to change.
 ## if you want to change "£a£" to "€@€" in the first operation, then you may mess it up in the second operation where you want to change
 ## original "@" into "a", so you need to do this operation first.
-#' Do not use $ or \ to mess things up
+#' Do not use $ or \ [ ]to mess things up
 #' @param X a vector of names
 #' @param oldname_format a vector,what you want to change.
 #' @param newname_format a vector, what you want to change to

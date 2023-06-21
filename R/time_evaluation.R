@@ -1,8 +1,8 @@
 #' evaluate time and memory
-#' @param code
-#' @param how_many_times
+#' @param code  code chunk
+#' @param how_many_times how many time you want to run the code chunk
 #' @export
-#' @example
+## @example
 ## code0="rnorm(1000000)"
 ## code1="rnorm(1000000)
 ##       rnorm(100000)"

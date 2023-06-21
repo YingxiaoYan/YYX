@@ -2,7 +2,9 @@
 % Please edit documentation in R/change_name.R
 \name{change_name}
 \alias{change_name}
-\title{Do not use $ or \ to mess things up}
+\title{Do not use $ or \ [ ]to mess things up
+
+[ ]: R:\%20}
 \usage{
 change_name(
   X,
@@ -36,5 +38,7 @@ change_name(
 X_new new vector of names
 }
 \description{
-Do not use $ or \ to mess things up
+Do not use $ or \ [ ]to mess things up
+
+[ ]: R:\%20
 }

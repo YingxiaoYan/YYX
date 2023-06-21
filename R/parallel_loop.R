@@ -6,7 +6,7 @@
 #' @export
 
 #beforeloop_code="qwe=vector();qwr<-vector()"
-#maincode=" for( j  in 1:5 ){  set.seed(1000); qwe[j]=rnorm(100);qwr[j]=rnorm(1);cat('\nloop',j)  }"
+#maincode=" for( j  in 1:5 ){  set.seed(1000); qwe=rnorm(100);qwr=rnorm(1);cat('\nloop',j);return(list(qwe,qwr))}"
 #afterloop_code="cat(qwe)"
 #
 parallel_loop<-function(beforeloop_code,
@@ -48,9 +48,7 @@ if( parallel_option=="doParallel"){
   char_new<-str_paste0(c(char_front_new,char_behind0))
   cat("Your new foreach loop by doparallel is ",char_new, "\n",
       "Note that in your code you will get only one output from each loop.
-       Please format your code to put all items in a list in each loop and have return(the_list) in the end.
-       The for
-
+       Please format your code to put things you want in the list in each loop and have return(list(items)) in the end.
        "
       )
    b<-menu(c("Yes","No"),
@@ -58,7 +56,8 @@ if( parallel_option=="doParallel"){
            "Do you want to stop now and reformat your code a bit?")
   if(b==1){stop("Change your code first.")}
   eval(parse(text=paste("time1=proc.time();",beforeloop_code)))
-  eval(parse(text=paste("result=",char_new)))
+
+  result<-eval(parse(text=paste("result=",char_new)))
 
   eval(parse(text=paste(afterloop_code,";time2=proc.time()")))
   estimated_time_parallel<-time2-time1
@@ -89,16 +88,18 @@ if( parallel_option=="doParallel"){
 
   for(j in char_name){
     #proc.time()
-  # rty[[i]]%<-%
-  #    {
+   rty[[j]]%<-%
+    {
        #  set.seed(1000)
         #qwe[i]<-rnorm(10000)[1]
         #cat('\nloop',i)
+      j=as.numeric(j)
         eval(parse(text=paste(char_behind0)))
         overall<-list()
         listname<-c()
-        for(i in 1:(length(ls()))+1){
-          if(!identical(ls()[i],"overall")&!identical(ls()[i],"i")&!identical(ls()[i],"listname")){
+        #rm(i)
+        for(i in 1:(length(ls()))){
+          if(!identical(ls()[i],"overall")&!identical(ls()[i],"i")&!identical(ls()[i],"listname")&!is.null(get(ls()[i]))){
           overall[[i]]<-get(ls()[i])
           listname<-c(listname,ls()[i])
 
@@ -119,7 +120,7 @@ if( parallel_option=="doParallel"){
         }
         names(overall_new)<-listname
         overall_new
-    #  }
+      }
   }
 
 

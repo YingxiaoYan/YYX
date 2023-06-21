@@ -4,12 +4,12 @@
 \alias{time_evaluation}
 \title{evaluate time and memory}
 \usage{
-time_evaluation(
-  code,
-  how_many_times = 1,
-  time_eval = c("system_time", "nanotime", "microbenchmark", "Rprof"),
-  memory_eval = c("object_size")
-)
+time_evaluation(code, how_many_times = 1, memory_eval = c("object_size"))
+}
+\arguments{
+\item{code}{code chunk}
+
+\item{how_many_times}{how many time you want to run the code chunk}
 }
 \description{
 evaluate time and memory

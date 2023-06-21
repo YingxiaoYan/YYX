@@ -50,7 +50,8 @@ find_identical_strings<-function(x,
     specific_char_sep_restr<-str_paste0(specific_char_sep)
       if(specific_char_sep_restr%in%names(position_list_n)){
         position_list_n<-position_list_n[specific_char_sep_restr]
-      }else{cat("no match strings")}
+      }else{position_list_n=NULL
+        cat("no match strings")}
 
   }
 
