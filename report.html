@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.361">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yingxiao Yan">
-<meta name="description" content="This is a multiline string">
+<meta name="description" content="Not all my purpose is achieved.">
 
-<title>Some functions</title>
+<title>A package with some functions/code that may be convenient</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,17 +65,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="report_files/libs/quarto-html/anchor.min.js"></script>
 <link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <style>html{ scroll-behavior: smooth; }</style>
 
 <link href="report_files/libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
 <script src="report_files/libs/pagedtable-1.1/js/pagedtable.js"></script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -84,11 +82,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <div class="quarto-title-block"><div><h1 class="title">Some functions</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
-            <p class="subtitle lead">a package in development</p>
+      <div class="quarto-title-block"><div><h1 class="title">A package with some functions/code that may be convenient</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+            <p class="subtitle lead">for time evaluation, memory usage, parallization, ignore error in loops</p>
                   <div>
         <div class="description">
-          <p>This is a multiline string</p>
+          <p>Not all my purpose is achieved.</p>
         </div>
       </div>
                 </div>
@@ -107,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">20-Jun-2023</p>
+        <p class="date">21-Jun-2023</p>
       </div>
     </div>
     
@@ -121,23 +119,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section-1-aim-intro" id="toc-section-1-aim-intro" class="nav-link active" data-scroll-target="#section-1-aim-intro"><span class="header-section-number">1</span> Section 1: Aim &amp; intro</a>
+  <li><a href="#aim-intro" id="toc-aim-intro" class="nav-link active" data-scroll-target="#aim-intro"><span class="header-section-number">1</span> Aim &amp; intro</a>
   <ul>
   <li><a href="#aim" id="toc-aim" class="nav-link" data-scroll-target="#aim"><span class="header-section-number">1.1</span> Aim</a></li>
-  <li><a href="#key-stufff-used" id="toc-key-stufff-used" class="nav-link" data-scroll-target="#key-stufff-used"><span class="header-section-number">1.2</span> key stufff used</a></li>
-  <li><a href="#some-description-for-exisiting-function-used-in-examples" id="toc-some-description-for-exisiting-function-used-in-examples" class="nav-link" data-scroll-target="#some-description-for-exisiting-function-used-in-examples"><span class="header-section-number">1.3</span> Some description for exisiting function used in examples</a></li>
-  <li><a href="#functions-in-this-package" id="toc-functions-in-this-package" class="nav-link" data-scroll-target="#functions-in-this-package"><span class="header-section-number">1.4</span> functions in this package</a></li>
+  <li><a href="#key-stuff-used" id="toc-key-stuff-used" class="nav-link" data-scroll-target="#key-stuff-used"><span class="header-section-number">1.2</span> key stuff used</a></li>
+  <li><a href="#functionscode-in-this-package" id="toc-functionscode-in-this-package" class="nav-link" data-scroll-target="#functionscode-in-this-package"><span class="header-section-number">1.3</span> functions()/code in this package</a></li>
+  <li><a href="#some-description-for-exisiting-function-used-in-examples" id="toc-some-description-for-exisiting-function-used-in-examples" class="nav-link" data-scroll-target="#some-description-for-exisiting-function-used-in-examples"><span class="header-section-number">1.4</span> Some description for exisiting function used in examples</a></li>
   </ul></li>
-  <li><a href="#section-2-time-calulation" id="toc-section-2-time-calulation" class="nav-link" data-scroll-target="#section-2-time-calulation"><span class="header-section-number">2</span> Section 2: Time calulation</a>
+  <li><a href="#time-estimation" id="toc-time-estimation" class="nav-link" data-scroll-target="#time-estimation"><span class="header-section-number">2</span> Time estimation</a>
   <ul>
-  <li><a href="#calulate-time-spent-of-a-code-chunk" id="toc-calulate-time-spent-of-a-code-chunk" class="nav-link" data-scroll-target="#calulate-time-spent-of-a-code-chunk"><span class="header-section-number">2.1</span> Calulate time spent of a code chunk</a></li>
-  <li><a href="#parallel-time" id="toc-parallel-time" class="nav-link" data-scroll-target="#parallel-time"><span class="header-section-number">2.2</span> Parallel time</a></li>
+  <li><a href="#time_evaluation-example-1" id="toc-time_evaluation-example-1" class="nav-link" data-scroll-target="#time_evaluation-example-1"><span class="header-section-number">2.1</span> time_evaluation() example 1</a></li>
+  <li><a href="#time_evaluation-example-2" id="toc-time_evaluation-example-2" class="nav-link" data-scroll-target="#time_evaluation-example-2"><span class="header-section-number">2.2</span> time_evaluation() example 2</a></li>
   </ul></li>
-  <li><a href="#section-3-memory-calculation" id="toc-section-3-memory-calculation" class="nav-link" data-scroll-target="#section-3-memory-calculation"><span class="header-section-number">3</span> Section 3: memory calculation</a>
+  <li><a href="#parallization-problem" id="toc-parallization-problem" class="nav-link" data-scroll-target="#parallization-problem"><span class="header-section-number">3</span> Parallization problem</a>
   <ul>
-  <li><a href="#plot" id="toc-plot" class="nav-link" data-scroll-target="#plot"><span class="header-section-number">3.1</span> plot</a></li>
+  <li><a href="#example-of-how-you-write-loops-in-three-scenario" id="toc-example-of-how-you-write-loops-in-three-scenario" class="nav-link" data-scroll-target="#example-of-how-you-write-loops-in-three-scenario"><span class="header-section-number">3.1</span> Example of how you write loops in three scenario</a></li>
+  <li><a href="#intention" id="toc-intention" class="nav-link" data-scroll-target="#intention"><span class="header-section-number">3.2</span> Intention</a></li>
+  <li><a href="#test-with-transform_looptext_to_doparallel" id="toc-test-with-transform_looptext_to_doparallel" class="nav-link" data-scroll-target="#test-with-transform_looptext_to_doparallel"><span class="header-section-number">3.3</span> test with transform_looptext_to_doParallel</a></li>
+  <li><a href="#test-with-transform_looptext_to_future" id="toc-test-with-transform_looptext_to_future" class="nav-link" data-scroll-target="#test-with-transform_looptext_to_future"><span class="header-section-number">3.4</span> test with transform_looptext_to_future</a></li>
   </ul></li>
-  <li><a href="#section-4-ignoring-error" id="toc-section-4-ignoring-error" class="nav-link" data-scroll-target="#section-4-ignoring-error"><span class="header-section-number">4</span> Section 4: ignoring error</a></li>
+  <li><a href="#memory-calculation" id="toc-memory-calculation" class="nav-link" data-scroll-target="#memory-calculation"><span class="header-section-number">4</span> memory calculation</a>
+  <ul>
+  <li><a href="#the-pryrmem_change-way" id="toc-the-pryrmem_change-way" class="nav-link" data-scroll-target="#the-pryrmem_change-way"><span class="header-section-number">4.1</span> the pryr::mem_change() way</a></li>
+  <li><a href="#the-peakram-way" id="toc-the-peakram-way" class="nav-link" data-scroll-target="#the-peakram-way"><span class="header-section-number">4.2</span> the peakRAM way</a></li>
+  </ul></li>
+  <li><a href="#ignoring-error" id="toc-ignoring-error" class="nav-link" data-scroll-target="#ignoring-error"><span class="header-section-number">5</span> ignoring error</a></li>
   </ul>
 </nav>
 </div>
@@ -148,153 +154,665 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="section-1-aim-intro" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Section 1: Aim &amp; intro</h1>
+<section id="aim-intro" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Aim &amp; intro</h1>
 <section id="aim" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="aim"><span class="header-section-number">1.1</span> Aim</h2>
-<p>The aim of what I do is to provide some convenience function regarding calculating running time, memory usage and treating error for my other packages(<a href="https://gitlab.com/CarlBrunius/MUVR/-/tree/MUVR2?ref_type=heads">MUVR</a>,<a href="https://gitlab.com/YingxiaoYan/triplotgui">TriplotGUI</a>)</p>
+<p><strong>The aim of what I do is to provide some convenience function regarding calculating running time, memory usage, parallelization and treating error for my other functions.</strong>(<a href="https://gitlab.com/CarlBrunius/MUVR/-/tree/MUVR2?ref_type=heads">MUVR</a>, <a href="https://gitlab.com/YingxiaoYan/triplotgui">TriplotGUI</a>)</p>
 </section>
-<section id="key-stufff-used" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="key-stufff-used"><span class="header-section-number">1.2</span> key stufff used</h2>
+<section id="key-stuff-used" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="key-stuff-used"><span class="header-section-number">1.2</span> key stuff used</h2>
 <ul>
 <li>eval(parse())</li>
+<li>system.time(), get_nanotime(), microbenchmark(), Rprof()</li>
+<li>peakRAM(), gc()</li>
+<li>the way to write code using future and doParallel</li>
 <li>tryCatch({})</li>
-<li>future and doParrallel package</li>
 </ul>
 </section>
-<section id="some-description-for-exisiting-function-used-in-examples" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="some-description-for-exisiting-function-used-in-examples"><span class="header-section-number">1.3</span> Some description for exisiting function used in examples</h2>
-<p>MUVR::MUVR(): Perform variable selection and prediction in repeated nested cross-validation</p>
-<p>TriplotGUI::TriplotGUIshiny(): The function that Open my shiny app that do some stuff(doesn’t matter here)</p>
-</section>
-<section id="functions-in-this-package" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="functions-in-this-package"><span class="header-section-number">1.4</span> functions in this package</h2>
+<section id="functionscode-in-this-package" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="functionscode-in-this-package"><span class="header-section-number">1.3</span> functions()/code in this package</h2>
 <ul>
 <li>time_evaluation()</li>
-<li>memory</li>
-<li>ignore_loop_error()</li>
-<li>supporting function: str_paste0(), find_identical_strings</li>
+<li>memory_evaluation()</li>
+<li>transform_looptext_to_doParallel(), transform_looptext_to_future()</li>
+<li>ignore_loop_error</li>
+<li>supporting functions: str_paste0(), find_identical_strings(),change_name()</li>
 </ul>
-<p><em>This is italic text</em></p>
-<p><strong>This is bold text</strong></p>
-<ul>
-<li>Point one</li>
-<li>Point two</li>
-</ul>
-<p>H<sub>2</sub>O</p>
-<p>2<sub>10</sub></p>
-<p>2<sup>10</sup></p>
-<p><span class="math inline">\(2^{10}\)</span></p>
-<p><span class="math inline">\(2_{10}\)</span></p>
-<p><span class="math inline">\(\sum\limits_{n=1}^{10} \frac{3}{2}\cdot n\)</span></p>
-<blockquote class="blockquote">
-<p>This is a block quote. This paragraph has two linessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.</p>
-</blockquote>
-<blockquote class="blockquote">
-<ol type="1">
-<li>This is a list inside a block quote. <img src="298442286864228942.jpg" class="img-fluid" style="width:10.0%" alt="This is a caption"> <!--This comment is ignore by the quarto, html style. The figure file need to be in the same folder as the qmd file--></li>
-<li>Second item. <a href="https://quarto.org">this</a></li>
-</ol>
-</blockquote>
-<p>Let’s explore the <strong>iris</strong> dataset.</p>
-<p><code>&lt;!--Text block code--&gt; This is generic block code.</code></p>
+</section>
+<section id="some-description-for-exisiting-function-used-in-examples" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="some-description-for-exisiting-function-used-in-examples"><span class="header-section-number">1.4</span> Some description for exisiting function used in examples</h2>
+<p>MUVR::MUVR(): Perform variable selection and prediction in repeated nested cross-validation</p>
+<p>TriplotGUI::TriplotGUIshiny(): The function that opens my shiny app, which do some stuff(doesn’t matter here)</p>
 </section>
 </section>
-<section id="section-2-time-calulation" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Section 2: Time calulation</h1>
-<p>problem microbenchmark do not allow similar functions and is parallel fluctuations of systemtime</p>
-<section id="calulate-time-spent-of-a-code-chunk" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="calulate-time-spent-of-a-code-chunk"><span class="header-section-number">2.1</span> Calulate time spent of a code chunk</h2>
+<section id="time-estimation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Time estimation</h1>
+<blockquote class="blockquote">
+<p>I want to run some code and test the time needed without running it in my global environment.</p>
+</blockquote>
+<section id="time_evaluation-example-1" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="time_evaluation-example-1"><span class="header-section-number">2.1</span> time_evaluation() example 1</h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## add name to the figure</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(YYX)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>tid1<span class="ot">&lt;-</span>YYX<span class="sc">::</span><span class="fu">time_evaluation</span>(<span class="st">"a&lt;-rnorm(10000000);b&lt;-'YY'"</span>,<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+The first time is excluded from average run times 
+
+system.time()
+
+get_nanotime()
+
+microbenchmark()
+Rprof()</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The code inside is not ran in your global environment, so it will use your memory but not occupy them.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tryCatch</span>({a},</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">error=</span><span class="cf">function</span>(e){<span class="fu">cat</span>(<span class="st">"a not found"</span>)})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>a not found</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>dotplot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<details>
+<summary>
+plot
+</summary>
 <div class="cell-output-display">
-<div id="tbl-iris" class="anchored">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</details>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>histplot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<details>
+<summary>
+plot
+</summary>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</details>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>systime_firstime</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>nanotime_average</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>nanotime_firstime</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>systime_average</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>microbench_firstime</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>microbench_average</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>user.self  sys.self   elapsed 
+     0.42      0.02      0.44 
+[1] 0.4157822
+[1] 0.4750731
+user.self  sys.self   elapsed 
+     0.41      0.00      0.43 
+[1] 0.408525
+[1] 0.4165011</code></pre>
+</div>
+</div>
+</section>
+<section id="time_evaluation-example-2" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="time_evaluation-example-2"><span class="header-section-number">2.2</span> time_evaluation() example 2</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="do">## This is to open my shiny app</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="do">## remotes::install_gitlab("YingxiaoYan/TriplotGUI")</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(TriplotGUI)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>tid2<span class="ot">&lt;-</span>YYX<span class="sc">::</span><span class="fu">time_evaluation</span>(<span class="st">"TriplotGUI::TriplotGUI_shiny()"</span>,<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+The first time is excluded from average run times 
 
-<div data-pagedtable="false"> <div class="table-caption">Table&nbsp;1:  <p>The column names areSepal.Length, Sepal.Width, Petal.Length,
-Petal.Width, Species</p> </div>
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Sepal.Length"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Sepal.Width"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Petal.Length"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Petal.Width"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Species"],"name":[5],"type":["fct"],"align":["left"]}],"data":[{"1":"5.1","2":"3.5","3":"1.4","4":"0.2","5":"setosa","_rn_":"1"},{"1":"4.9","2":"3.0","3":"1.4","4":"0.2","5":"setosa","_rn_":"2"},{"1":"4.7","2":"3.2","3":"1.3","4":"0.2","5":"setosa","_rn_":"3"},{"1":"4.6","2":"3.1","3":"1.5","4":"0.2","5":"setosa","_rn_":"4"},{"1":"5.0","2":"3.6","3":"1.4","4":"0.2","5":"setosa","_rn_":"5"},{"1":"5.4","2":"3.9","3":"1.7","4":"0.4","5":"setosa","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="parallel-time" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="parallel-time"><span class="header-section-number">2.2</span> Parallel time</h2>
-<div class="cell">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## echo display the chunk</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="do">## eval truth is default whne false, not run the code</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-</section>
-<section id="section-3-memory-calculation" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Section 3: memory calculation</h1>
-<section id="plot" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="plot"><span class="header-section-number">3.1</span> plot</h2>
-</section>
-</section>
-<section id="section-4-ignoring-error" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Section 4: ignoring error</h1>
-<pre><code>::: {.cell}
+system.time()
 
-```{.r .cell-code}
-## fig-cap is to add name to the figure</code></pre>
-<p>:::</p>
-<div class="cell">
+get_nanotime()
+
+microbenchmark()
+Rprof()</code></pre>
+</div>
+</div>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>
+plot
+</summary>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</details>
+<details>
+<summary>
+plot
+</summary>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</details>
+</div>
+</section>
+</section>
+<section id="parallization-problem" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Parallization problem</h1>
+<blockquote class="blockquote">
+<p>I want to have a function to modify my ordinary for loop code for parallelizarion (to automatically reformat the code to fit for how you write loops when using doParallel or future package)</p>
+</blockquote>
+<section id="example-of-how-you-write-loops-in-three-scenario" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="example-of-how-you-write-loops-in-three-scenario"><span class="header-section-number">3.1</span> Example of how you write loops in three scenario</h2>
+<ul>
+<li>ordinary:</li>
+</ul>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="cf">function</span>(vec1) {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        value<span class="ot">&lt;-</span><span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="st">"vec1&lt;-c(vec1, i)"</span>))</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(value,<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  return(value)</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">vec</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#code_to_text</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){aa[i]<span class="ot">&lt;-</span>i;bb[[i]]<span class="ot">&lt;-</span><span class="fu">c</span>(i,i<span class="sc">+</span><span class="dv">1</span>,i<span class="sc">+</span><span class="dv">3</span>)}</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>aa</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>bb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>5 1 
-5 1 2 
-5 1 2 3 
-5 1 2 3 4 
-5 1 2 3 4 5 </code></pre>
+<pre><code>[1] 1 2 3 4 5
+[[1]]
+[1] 1 2 4
+
+[[2]]
+[1] 2 3 5
+
+[[3]]
+[1] 3 4 6
+
+[[4]]
+[1] 4 5 7
+
+[[5]]
+[1] 5 6 8</code></pre>
 </div>
 </div>
-<div class="cell">
+<ul>
+<li>doParallel way</li>
+</ul>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="cf">function</span>(vec1) {</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        value<span class="ot">&lt;-</span><span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="st">"vec1&lt;-c(vec1, i)"</span>))</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#    cat(value,"\n")</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(value)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">vec</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(doParallel)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>num_cores <span class="ot">&lt;-</span> <span class="fu">detectCores</span>() <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> <span class="fu">makeCluster</span>(num_cores) <span class="co"># Init cluster</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">registerDoParallel</span>(cl)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="st">"%doVersion%"</span> <span class="ot">&lt;-</span> <span class="fu">get</span>(<span class="st">"%dopar%"</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) <span class="sc">%doVersion%</span> {</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  aa <span class="ot">&lt;-</span> i</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  bb <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i <span class="sc">+</span> <span class="dv">1</span>, i <span class="sc">+</span> <span class="dv">3</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(aa, bb))</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="fu">stopCluster</span>(cl)</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co">#cc becomes a list contain aa and bb</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>cc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 5 1 2 3 4 5</code></pre>
+<pre><code>[[1]]
+[[1]][[1]]
+[1] 1
+
+[[1]][[2]]
+[1] 1 2 4
+
+
+[[2]]
+[[2]][[1]]
+[1] 2
+
+[[2]][[2]]
+[1] 2 3 5
+
+
+[[3]]
+[[3]][[1]]
+[1] 3
+
+[[3]][[2]]
+[1] 3 4 6
+
+
+[[4]]
+[[4]][[1]]
+[1] 4
+
+[[4]][[2]]
+[1] 4 5 7
+
+
+[[5]]
+[[5]][[1]]
+[1] 5
+
+[[5]][[2]]
+[1] 5 6 8</code></pre>
 </div>
+</div>
+<p>-future</p>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  vecc <span class="ot">&lt;-</span> <span class="fu">vec</span>(<span class="dv">5</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>vecc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(future)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">plan</span>(multisession);</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a> aa<span class="ot">&lt;-</span><span class="fu">c</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a> new_env <span class="ot">&lt;-</span> <span class="fu">new.env</span>(); </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a> <span class="cf">for</span>(i  <span class="cf">in</span> <span class="fu">c</span>( <span class="st">'1'</span>,<span class="st">'2'</span>,<span class="st">'3'</span>,<span class="st">'4'</span>,<span class="st">'5'</span> )){ </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>   new_env[[ i ]] <span class="sc">%&lt;-%</span>{ </span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>     aa<span class="ot">&lt;-</span>i;bb<span class="ot">&lt;-</span><span class="fu">c</span>(i,i,i);</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">list</span>(aa,bb)} }; </span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a> new_env <span class="ot">&lt;-</span> <span class="fu">as.list</span>(new_env);</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a> new_env</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 5 1 2 3 4 5</code></pre>
+<pre><code>$`1`
+$`1`[[1]]
+[1] "1"
+
+$`1`[[2]]
+[1] "1" "1" "1"
+
+
+$`2`
+$`2`[[1]]
+[1] "2"
+
+$`2`[[2]]
+[1] "2" "2" "2"
+
+
+$`3`
+$`3`[[1]]
+[1] "3"
+
+$`3`[[2]]
+[1] "3" "3" "3"
+
+
+$`4`
+$`4`[[1]]
+[1] "4"
+
+$`4`[[2]]
+[1] "4" "4" "4"
+
+
+$`5`
+$`5`[[1]]
+[1] "5"
+
+$`5`[[2]]
+[1] "5" "5" "5"</code></pre>
 </div>
 </div>
-<p>quarto::quarto_render(“quarto_try.qmd”) quarto::quarto_render(“quarto_try.qmd”)</p>
+</section>
+<section id="intention" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="intention"><span class="header-section-number">3.2</span> Intention</h2>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  aa[i] <span class="ot">&lt;-</span> i</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  bb[[i]] <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i, i)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<blockquote class="blockquote">
+<p>1.–&gt; To doParallel format</p>
+</blockquote>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) <span class="sc">%dopar%</span> {</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  aa <span class="ot">&lt;-</span> i</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  bb <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i, i)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(aa, bb))</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<blockquote class="blockquote">
+<p>2.–&gt; To future format (From Sebastian’s lab)</p>
+</blockquote>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">plan</span>(multisession);</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>new_env <span class="ot">&lt;-</span> <span class="fu">new.env</span>();</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i  <span class="cf">in</span> <span class="fu">c</span>(<span class="st">'1'</span>, <span class="st">'2'</span>, <span class="st">'3'</span>, <span class="st">'4'</span>, <span class="st">'5'</span>)) {</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  new_env[[i]] <span class="sc">%&lt;-%</span> {</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    aa <span class="ot">&lt;-</span> i</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    bb <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i, i)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(items))</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>new_env <span class="ot">&lt;-</span> <span class="fu">as.list</span>(new_env)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div style="color: red">
+<p>I haven’t figure out how to transform the text and <strong>RUN</strong></p>
+</div>
+</section>
+<section id="test-with-transform_looptext_to_doparallel" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="test-with-transform_looptext_to_doparallel"><span class="header-section-number">3.3</span> test with transform_looptext_to_doParallel</h2>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>cc<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">5</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>code<span class="ot">=</span><span class="st">"for(i in 1:5){aa[i]&lt;-i;bb[[i]]&lt;-c(i,i,i);</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="st">       }"</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="fu">transform_loop_text_doParallel</span>(code)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+When saving output, your code should have format,e.x. a[i]&lt;-1,not a&lt;-c(a,1).
+Each line in your loop should have a ';'
+
+
+Your new foreach loop by doparallel is
+result&lt;-foreach(i=1:5)%dopar%{aa&lt;-i;bb&lt;-c(i,i,i);
+;return(list(items))}
+
+Note that in your code you will get only one output from each loop. Please adjust your code to put
+thing you want in the list, replacing items in the end
+.
+</code></pre>
+</div>
+</div>
+</section>
+<section id="test-with-transform_looptext_to_future" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="test-with-transform_looptext_to_future"><span class="header-section-number">3.4</span> test with transform_looptext_to_future</h2>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(future)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>cc<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">5</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>code<span class="ot">=</span><span class="st">"for(i in 1:5){aa[i]&lt;-i;bb[[i]]&lt;-c(i,i,i);</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="st">       }"</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">transform_loop_text_future</span>(code)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+When saving output, your code should have format,e.x. a[i]&lt;-1,not a&lt;-c(a,1).
+Each line in your loop should have a ';'
+
+The future code looks like:
+new_env &lt;- new.env();
+for(i in c( '1','2','3','4','5' )){ new_env[[ i ]] %&lt;-%{ aa&lt;-i;bb&lt;-c(i,i,i);
+} ;return(list(items))};
+new_env &lt;- as.list(new_env);
+
+Note that in your code you will get only one output from each loop. Please adjust your code to put
+thing you want in the list, replacing items in the end
+.</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="memory-calculation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> memory calculation</h1>
+<blockquote class="blockquote">
+<p>I want to have a convenience function to calculate how many memeory I will occupy with out running them in my global environment.</p>
+</blockquote>
+<section id="the-pryrmem_change-way" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="the-pryrmem_change-way"><span class="header-section-number">4.1</span> the pryr::mem_change() way</h2>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(peakRAM)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>code<span class="ot">&lt;-</span><span class="st">"abcd&lt;-rnorm(10000000)"</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">memory_evaluation</span>(code)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>1.By gc(verbose=T), memory usage before running your code: 
+
+2.By pryr::mem_used(), before running your code, your assumed memory usege is 93.67132 Mb
+
+3. By pryr::mem_change(), you occupied  79.99878 more Mb after your code 
+
+4.By gc(verbose=T), memory usage before running your code: 
+
+5.By pryr::mem_used(), after running your code, your assumed memory useage is 173.6804 Mb
+
+$memchange
+80 MB
+
+$gcchange
+[1] 1e+07</code></pre>
+</div>
+</div>
+</section>
+<section id="the-peakram-way" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="the-peakram-way"><span class="header-section-number">4.2</span> the peakRAM way</h2>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>code<span class="ot">&lt;-</span><span class="st">"abcd&lt;-rnorm(10000000)"</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">memory_evaluation</span>(code,<span class="at">option=</span><span class="st">"peakRAM"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+1.By gc(verbose=T), memory usage before running your code: 
+
+2.By peakRAM(), after runing your code, your will use 76.3 Mb ram to save your object. 
+ Your peak ram use is 76.3 Mb.
+
+3.By gc(verbose=T), memory usage before running your code: 
+
+$ram_occupied
+  Total_RAM_Used_MiB
+1               76.3
+
+$ram_used
+  Peak_RAM_Used_MiB
+1              76.3</code></pre>
+</div>
+</div>
+<p><a href="https://www.rdocumentation.org/packages/peakRAM/versions/1.0.2">peakRam</a> <a href="http://adv-r.had.co.nz/memory.html">Hadley book</a></p>
+</section>
+</section>
+<section id="ignoring-error" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> ignoring error</h1>
+<blockquote class="blockquote">
+<p>I want to run my machine learning algorithm on 400 simulated data (through 400 loops). When sometimes an error occurs, I know it is because the data is simulated to the extreme scenario…</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I don’t care about the loop that has error. if an error occurs, I want to ignore that loop and restart that loop (with data simulation)</p>
+</blockquote>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MUVR)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>rep<span class="ot">=</span><span class="dv">2</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>trick<span class="ot">=</span><span class="dv">6</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>dataX<span class="ot">=</span>Xotu</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>dataY<span class="ot">=</span>Yotu</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>empty_name<span class="ot">&lt;-</span><span class="st">"vector_1&lt;-vector()</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="st">            vector_2&lt;-vector()"</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>some_operation_before<span class="ot">&lt;-</span><span class="st">"dataYPerm = sample(dataY)"</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>main_function<span class="ot">&lt;-</span><span class="st">"perm=MUVR(X=dataX,Y=dataYPerm,method='RF',</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="st">                DA=T, modReturn = T, nRep =trick, nOuter=3,varRatio=0.3)</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="st">               if(rep==sample(c(1:2),1)){trick=trick-1; stop('deliberatly give error')}"</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>record_values<span class="ot">&lt;-</span><span class="st">"vector_1&lt;- c(vector_1,perm$ber['min'])</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a><span class="st">vector_2&lt;- c(vector_2,perm$miss['min'])"</span></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>output<span class="ot">&lt;-</span><span class="st">"list(vector_1,vector_2)"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>When I put everything in the function and run them, the vector only record the value given by the last loop.</p>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>ignore_loop_error <span class="ot">&lt;-</span> <span class="cf">function</span>(rep,</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>                              empty_name,</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>                              <span class="at">some_operation_before =</span> <span class="cn">NULL</span>,</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>                              main_function,</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>                              record_values,</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">some_operation_after =</span> <span class="cn">NULL</span>,</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>                              output) {</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  pp <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  <span class="do">########################################</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  <span class="do">#### empty name</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(empty_name)))</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="do">##############################################</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (pp <span class="sc">&lt;=</span> rep) {</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> pp</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"/loop"</span>, pp, <span class="st">"of"</span>, rep)</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(some_operation_before)))</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tryCatch</span>({</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(main_function)))</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>      <span class="do">##############################</span></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>      <span class="do">#####################################</span></span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>    }, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (pp <span class="sc">==</span> p <span class="sc">+</span> <span class="dv">1</span>) {</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>      <span class="do">## recording</span></span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(record_values)))</span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-32"><a href="#cb29-32" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output))))) {</span>
+<span id="cb29-33"><a href="#cb29-33" aria-hidden="true" tabindex="-1"></a>    result[[i]] <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output)))[[i]]</span>
+<span id="cb29-34"><a href="#cb29-34" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-35"><a href="#cb29-35" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"c('"</span>, <span class="fu">substr</span>(output, <span class="at">start =</span> <span class="dv">6</span>, <span class="at">stop =</span> <span class="fu">nchar</span>(output) <span class="sc">-</span></span>
+<span id="cb29-36"><a href="#cb29-36" aria-hidden="true" tabindex="-1"></a>                                <span class="dv">1</span>), <span class="st">"')"</span>)</span>
+<span id="cb29-37"><a href="#cb29-37" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">change_name</span>(text, <span class="st">","</span>, <span class="st">"','"</span>)</span>
+<span id="cb29-38"><a href="#cb29-38" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(<span class="fu">names</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(</span>
+<span id="cb29-39"><a href="#cb29-39" aria-hidden="true" tabindex="-1"></a>    output</span>
+<span id="cb29-40"><a href="#cb29-40" aria-hidden="true" tabindex="-1"></a>  )))))) {</span>
+<span id="cb29-41"><a href="#cb29-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(result) <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> text))</span>
+<span id="cb29-42"><a href="#cb29-42" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-43"><a href="#cb29-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb29-44"><a href="#cb29-44" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</div>
+</div>
+</div>
+<p>When I use the code outside function, it works.</p>
+<div class="cell" data-layout-align="left" data-linewidth="100" data-fold.plot="true">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  pp <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="do">########################################</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="do">#### empty name</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(empty_name)))</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="do">##############################################</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (pp <span class="sc">&lt;=</span> rep) {</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> pp</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"/loop"</span>, pp, <span class="st">"of"</span>, rep)</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(some_operation_before)))</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tryCatch</span>({</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(main_function)))</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>      <span class="do">##############################</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>      <span class="do">#####################################</span></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>    }, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (pp <span class="sc">==</span> p <span class="sc">+</span> <span class="dv">1</span>) {</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>      <span class="do">## recording</span></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(record_values)))</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output))))) {</span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a>    result[[i]] <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output)))[[i]]</span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"c('"</span>, <span class="fu">substr</span>(output, <span class="at">start =</span> <span class="dv">6</span>, <span class="at">stop =</span> <span class="fu">nchar</span>(output) <span class="sc">-</span></span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>                                <span class="dv">1</span>), <span class="st">"')"</span>)</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">change_name</span>(text, <span class="st">","</span>, <span class="st">"','"</span>)</span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(<span class="fu">names</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(</span>
+<span id="cb30-32"><a href="#cb30-32" aria-hidden="true" tabindex="-1"></a>    output</span>
+<span id="cb30-33"><a href="#cb30-33" aria-hidden="true" tabindex="-1"></a>  )))))) {</span>
+<span id="cb30-34"><a href="#cb30-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(result) <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> text))</span>
+<span id="cb30-35"><a href="#cb30-35" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The eval(parse()) way can be messy when it is tangled with many loops. Don’t use it to build functions if several eval(parse()) at different loops.</p>
+</div>
+</div>
+</div>
+<p>The end</p>
 <!-- -->
 
 </section>
@@ -585,167 +1103,402 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Some functions"</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "a package in development"</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Yingxiao Yan"</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "DD-MMM-YYYY"</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="an">params:</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co">  name: setosa</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: pulse</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight: kate</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc:  true  ## automaticlly generate table of contente</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 4  ## specify the number of section levels to include in the table of contents</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left  ##default right</span></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co">    smooth-scroll:  true  ### when you click on the table of content, how did what you see move</span></span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true  ## add number in the session or not</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="co">    number-depth: 4</span></span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="co">    title-block-banner: true  ## add a banner for the quarto</span></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true  ## fold the code</span></span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true   ## a bar for code </span></span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a><span class="co">    code-copy: true  ##   adds a copy icon in the code chunk and</span></span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="co">    code-overflow: wrap  ## when the code lines are too wide for container</span></span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged  ## kable is another option How the dataframe looks like </span></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="co">    standalone: false  ### specifies if all assets and libraries must be integrated into the output html file as a standalone document.</span></span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a><span class="co">    fig-align: right</span></span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &gt;</span></span>
-<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="co">  This is</span></span>
-<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="co">  a multiline</span></span>
-<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="co">  string</span></span>
-<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
-<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
-<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a><span class="fu"># Section 1: Aim &amp; intro</span></span>
-<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aim</span></span>
-<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>The aim of what I do is to provide some convenience function regarding calculating running time, memory usage and treating error for my other packages(<span class="co">[</span><span class="ot">MUVR</span><span class="co">](https://gitlab.com/CarlBrunius/MUVR/-/tree/MUVR2?ref_type=heads)</span>,<span class="co">[</span><span class="ot">TriplotGUI</span><span class="co">](https://gitlab.com/YingxiaoYan/triplotgui)</span>)</span>
-<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## key stufff used</span></span>
-<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>eval(parse())</span>
-<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>tryCatch({})</span>
-<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>future and doParrallel package</span>
-<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Some description for exisiting function used in examples </span></span>
-<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>MUVR::MUVR(): Perform variable selection and prediction in repeated nested cross-validation </span>
-<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>TriplotGUI::TriplotGUIshiny(): The function that Open my shiny app that do some stuff(doesn't matter here)</span>
-<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## functions in this package</span></span>
-<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>time_evaluation()</span>
-<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>memory</span>
-<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ignore_loop_error()</span>
-<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>supporting function: str_paste0(), find_identical_strings</span>
-<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>*This is italic text*</span>
-<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>**This is bold text**</span>
-<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Point one</span>
-<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Point two</span>
-<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a>H~2~O</span>
-<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a>2~10~</span>
-<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a>2^10^</span>
-<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a>$2^{10}$  </span>
-<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a>$2_{10}$</span>
-<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a>$\sum\limits_{n=1}^{10} \frac{3}{2}\cdot n$</span>
-<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; This is a block quote. This</span></span>
-<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; paragraph has two linessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.</span></span>
-<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 1. This is a list inside a block quote. </span><span class="al">![This is a caption](298442286864228942.jpg)</span><span class="at">{width=10%} </span><span class="co">&lt;!--This comment is ignore by the quarto, html style. The figure file need to be in the same folder as the qmd file--&gt;</span></span>
-<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 2. Second item. </span><span class="co">[</span><span class="ot">this</span><span class="co">](https://quarto.org)</span></span>
-<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a>Let's explore the **iris** dataset.</span>
-<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a><span class="in">```   &lt;!--Text block code--&gt;</span></span>
-<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a><span class="in">This is generic block code.</span></span>
-<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a><span class="fu"># Section 2: Time calulation</span></span>
-<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a>problem microbenchmark do not allow similar functions and is parallel</span>
-<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a>fluctuations of systemtime </span>
-<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a><span class="fu">## Calulate time spent of a code chunk</span></span>
-<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-iris</span></span>
-<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: !expr paste0("The column names are",paste(colnames(iris),collapse=", "))</span></span>
-<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a><span class="do">## add name to the figure</span></span>
-<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(iris)</span>
-<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a><span class="fu">## Parallel time </span></span>
-<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb10-115"><a href="#cb10-115" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true </span></span>
-<span id="cb10-116"><a href="#cb10-116" aria-hidden="true" tabindex="-1"></a><span class="do">## echo display the chunk</span></span>
-<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a><span class="do">## eval truth is default whne false, not run the code</span></span>
-<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a><span class="fu"># Section 3: memory calculation</span></span>
-<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a><span class="fu">## plot</span></span>
-<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-128"><a href="#cb10-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-129"><a href="#cb10-129" aria-hidden="true" tabindex="-1"></a><span class="fu"># Section 4: ignoring error</span></span>
-<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: fig-plot-a</span></span>
-<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: This is a figure caption.</span></span>
-<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-height: 6</span></span>
-<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-width: 6</span></span>
-<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a><span class="in">## fig-cap is to add name to the figure</span></span>
-<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-143"><a href="#cb10-143" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-144"><a href="#cb10-144" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="cf">function</span>(vec1) {</span>
-<span id="cb10-145"><a href="#cb10-145" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
-<span id="cb10-146"><a href="#cb10-146" aria-hidden="true" tabindex="-1"></a>        value<span class="ot">&lt;-</span><span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="st">"vec1&lt;-c(vec1, i)"</span>))</span>
-<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(value,<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb10-148"><a href="#cb10-148" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb10-149"><a href="#cb10-149" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  return(value)</span></span>
-<span id="cb10-150"><a href="#cb10-150" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-151"><a href="#cb10-151" aria-hidden="true" tabindex="-1"></a><span class="fu">vec</span>(<span class="dv">5</span>)</span>
-<span id="cb10-152"><a href="#cb10-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-153"><a href="#cb10-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-156"><a href="#cb10-156" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb10-157"><a href="#cb10-157" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="cf">function</span>(vec1) {</span>
-<span id="cb10-158"><a href="#cb10-158" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
-<span id="cb10-159"><a href="#cb10-159" aria-hidden="true" tabindex="-1"></a>        value<span class="ot">&lt;-</span><span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="st">"vec1&lt;-c(vec1, i)"</span>))</span>
-<span id="cb10-160"><a href="#cb10-160" aria-hidden="true" tabindex="-1"></a>    <span class="co">#    cat(value,"\n")</span></span>
-<span id="cb10-161"><a href="#cb10-161" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb10-162"><a href="#cb10-162" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(value)</span>
-<span id="cb10-163"><a href="#cb10-163" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-164"><a href="#cb10-164" aria-hidden="true" tabindex="-1"></a><span class="fu">vec</span>(<span class="dv">5</span>)</span>
-<span id="cb10-165"><a href="#cb10-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-166"><a href="#cb10-166" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
-<span id="cb10-167"><a href="#cb10-167" aria-hidden="true" tabindex="-1"></a>  vecc <span class="ot">&lt;-</span> <span class="fu">vec</span>(<span class="dv">5</span>)</span>
-<span id="cb10-168"><a href="#cb10-168" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-169"><a href="#cb10-169" aria-hidden="true" tabindex="-1"></a>vecc</span>
-<span id="cb10-170"><a href="#cb10-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb10-171"><a href="#cb10-171" aria-hidden="true" tabindex="-1"></a>quarto::quarto_render("quarto_try.qmd")</span>
-<span id="cb10-172"><a href="#cb10-172" aria-hidden="true" tabindex="-1"></a>quarto::quarto_render("quarto_try.qmd")</span>
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "A package with some functions/code that may be convenient"</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "for time evaluation, memory usage, parallization, ignore error in loops"</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Yingxiao Yan"</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> last-modified</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> "DD-MMM-YYYY"</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="an">params:</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="co">  name: setosa</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight: tango</span></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="co">    toc:  true  ## automaticlly generate table of contente</span></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 4  ## specify the number of section levels to include in the table of contents</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-location: left  ##default right</span></span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a><span class="co">    smooth-scroll:  true  ### when you click on the table of content, how did what you see move</span></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a><span class="co">    number-sections: true  ## add number in the session or not</span></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a><span class="co">    number-depth: 4</span></span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a><span class="co">    title-block-banner: true  ## add a banner for the quarto</span></span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true  ## fold the code</span></span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true   ## a bar for code </span></span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a><span class="co">    code-copy: true  ##   adds a copy icon in the code chunk and</span></span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a><span class="co">    code-overflow: wrap  ## when the code lines are too wide for container</span></span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a><span class="co">    df-print: paged  ## kable is another option How the dataframe looks like </span></span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a><span class="co">    standalone: false  ### specifies if all assets and libraries must be integrated into the output html file as a standalone document.</span></span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a><span class="co">    fig-align: right</span></span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a><span class="co">    theme:  solar</span></span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a><span class="co">    bg: '#121212'</span></span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a><span class="co">    fg: '#E4E4E4'</span></span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a><span class="an">geometry:</span><span class="co"> margin=lin</span></span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &gt;</span></span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a><span class="co">  Not all my purpose is achieved.</span></span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb31-34"><a href="#cb31-34" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: auto</span></span>
+<span id="cb31-35"><a href="#cb31-35" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb31-36"><a href="#cb31-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-37"><a href="#cb31-37" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, include=FALSE}</span></span>
+<span id="cb31-38"><a href="#cb31-38" aria-hidden="true" tabindex="-1"></a><span class="do">##This is a function that combines html and rmarkdown. It aims to generate a button that could hide output or plot (fold.output=T or fold.plot=T).</span></span>
+<span id="cb31-39"><a href="#cb31-39" aria-hidden="true" tabindex="-1"></a>hooks <span class="ot">=</span> knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">get</span>()</span>
+<span id="cb31-40"><a href="#cb31-40" aria-hidden="true" tabindex="-1"></a>hook_foldable <span class="ot">=</span> <span class="cf">function</span>(type) {</span>
+<span id="cb31-41"><a href="#cb31-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">force</span>(type)</span>
+<span id="cb31-42"><a href="#cb31-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">function</span>(x, options) {</span>
+<span id="cb31-43"><a href="#cb31-43" aria-hidden="true" tabindex="-1"></a>    res <span class="ot">=</span> hooks[[type]](x, options)</span>
+<span id="cb31-44"><a href="#cb31-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb31-45"><a href="#cb31-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">isTRUE</span>(options[[<span class="fu">paste0</span>(<span class="st">"fold."</span>, type)]])) <span class="fu">return</span>(res)</span>
+<span id="cb31-46"><a href="#cb31-46" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb31-47"><a href="#cb31-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste0</span>(</span>
+<span id="cb31-48"><a href="#cb31-48" aria-hidden="true" tabindex="-1"></a>      <span class="st">"&lt;details&gt;&lt;summary&gt;"</span>, type, <span class="st">"&lt;/summary&gt;</span><span class="sc">\n\n</span><span class="st">"</span>,</span>
+<span id="cb31-49"><a href="#cb31-49" aria-hidden="true" tabindex="-1"></a>      res,</span>
+<span id="cb31-50"><a href="#cb31-50" aria-hidden="true" tabindex="-1"></a>      <span class="st">"</span><span class="sc">\n\n</span><span class="st">&lt;/details&gt;"</span></span>
+<span id="cb31-51"><a href="#cb31-51" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb31-52"><a href="#cb31-52" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-53"><a href="#cb31-53" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-54"><a href="#cb31-54" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">set</span>(</span>
+<span id="cb31-55"><a href="#cb31-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">output =</span> <span class="fu">hook_foldable</span>(<span class="st">"output"</span>),</span>
+<span id="cb31-56"><a href="#cb31-56" aria-hidden="true" tabindex="-1"></a>  <span class="at">plot =</span> <span class="fu">hook_foldable</span>(<span class="st">"plot"</span>)</span>
+<span id="cb31-57"><a href="#cb31-57" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb31-58"><a href="#cb31-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-59"><a href="#cb31-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-60"><a href="#cb31-60" aria-hidden="true" tabindex="-1"></a><span class="in">```{r wrap-hook, echo=F,message=FALSE, warning=FALSE,comment=NA,linewidth=100}</span></span>
+<span id="cb31-61"><a href="#cb31-61" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb31-62"><a href="#cb31-62" aria-hidden="true" tabindex="-1"></a>hook_output <span class="ot">=</span> knit_hooks<span class="sc">$</span><span class="fu">get</span>(<span class="st">'output'</span>)</span>
+<span id="cb31-63"><a href="#cb31-63" aria-hidden="true" tabindex="-1"></a>knit_hooks<span class="sc">$</span><span class="fu">set</span>(<span class="at">output =</span> <span class="cf">function</span>(x, options) {</span>
+<span id="cb31-64"><a href="#cb31-64" aria-hidden="true" tabindex="-1"></a>  <span class="co"># this hook is used only when the linewidth option is not NULL</span></span>
+<span id="cb31-65"><a href="#cb31-65" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(n <span class="ot">&lt;-</span> options<span class="sc">$</span>linewidth)) {</span>
+<span id="cb31-66"><a href="#cb31-66" aria-hidden="true" tabindex="-1"></a>    x <span class="ot">=</span> knitr<span class="sc">:::</span><span class="fu">split_lines</span>(x)</span>
+<span id="cb31-67"><a href="#cb31-67" aria-hidden="true" tabindex="-1"></a>    <span class="co"># any lines wider than n should be wrapped</span></span>
+<span id="cb31-68"><a href="#cb31-68" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">any</span>(<span class="fu">nchar</span>(x) <span class="sc">&gt;</span> n)) x <span class="ot">=</span> <span class="fu">strwrap</span>(x, <span class="at">width =</span> n)</span>
+<span id="cb31-69"><a href="#cb31-69" aria-hidden="true" tabindex="-1"></a>    x <span class="ot">=</span> <span class="fu">paste</span>(x, <span class="at">collapse =</span> <span class="st">'</span><span class="sc">\n</span><span class="st">'</span>)</span>
+<span id="cb31-70"><a href="#cb31-70" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-71"><a href="#cb31-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hook_output</span>(x, options)</span>
+<span id="cb31-72"><a href="#cb31-72" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb31-73"><a href="#cb31-73" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-74"><a href="#cb31-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-75"><a href="#cb31-75" aria-hidden="true" tabindex="-1"></a><span class="fu"># Aim &amp; intro</span></span>
+<span id="cb31-76"><a href="#cb31-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-77"><a href="#cb31-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aim</span></span>
+<span id="cb31-78"><a href="#cb31-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-79"><a href="#cb31-79" aria-hidden="true" tabindex="-1"></a>**The aim of what I do is to provide some convenience function regarding calculating running time, memory usage, parallelization and treating error for my other functions.**(<span class="co">[</span><span class="ot">MUVR</span><span class="co">](https://gitlab.com/CarlBrunius/MUVR/-/tree/MUVR2?ref_type=heads)</span>, <span class="co">[</span><span class="ot">TriplotGUI</span><span class="co">](https://gitlab.com/YingxiaoYan/triplotgui)</span>)</span>
+<span id="cb31-80"><a href="#cb31-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-81"><a href="#cb31-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## key stuff used</span></span>
+<span id="cb31-82"><a href="#cb31-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>eval(parse()) </span>
+<span id="cb31-83"><a href="#cb31-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>system.time(), get_nanotime(), microbenchmark(), Rprof()</span>
+<span id="cb31-84"><a href="#cb31-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>peakRAM(), gc()</span>
+<span id="cb31-85"><a href="#cb31-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>the way to write code using future and doParallel </span>
+<span id="cb31-86"><a href="#cb31-86" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>tryCatch({})</span>
+<span id="cb31-87"><a href="#cb31-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-88"><a href="#cb31-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## functions()/code in this package</span></span>
+<span id="cb31-89"><a href="#cb31-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>time_evaluation()</span>
+<span id="cb31-90"><a href="#cb31-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>memory_evaluation()</span>
+<span id="cb31-91"><a href="#cb31-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>transform_looptext_to_doParallel(), transform_looptext_to_future()</span>
+<span id="cb31-92"><a href="#cb31-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ignore_loop_error</span>
+<span id="cb31-93"><a href="#cb31-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>supporting functions: str_paste0(), find_identical_strings(),change_name()</span>
+<span id="cb31-94"><a href="#cb31-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-95"><a href="#cb31-95" aria-hidden="true" tabindex="-1"></a><span class="fu">## Some description for exisiting function used in examples </span></span>
+<span id="cb31-96"><a href="#cb31-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-97"><a href="#cb31-97" aria-hidden="true" tabindex="-1"></a>MUVR::MUVR(): Perform variable selection and prediction in repeated nested cross-validation </span>
+<span id="cb31-98"><a href="#cb31-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-99"><a href="#cb31-99" aria-hidden="true" tabindex="-1"></a>TriplotGUI::TriplotGUIshiny(): The function that opens my shiny app, which do some stuff(doesn't matter here)</span>
+<span id="cb31-100"><a href="#cb31-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-101"><a href="#cb31-101" aria-hidden="true" tabindex="-1"></a><span class="fu"># Time estimation</span></span>
+<span id="cb31-102"><a href="#cb31-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-103"><a href="#cb31-103" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I want to run some code and test the time needed without running it in my global environment.</span>  </span>
+<span id="cb31-104"><a href="#cb31-104" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb31-105"><a href="#cb31-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-106"><a href="#cb31-106" aria-hidden="true" tabindex="-1"></a><span class="fu">## time_evaluation() example 1</span></span>
+<span id="cb31-107"><a href="#cb31-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-108"><a href="#cb31-108" aria-hidden="true" tabindex="-1"></a><span class="in">```{r tid1, echo=T, message=FALSE,include=T, warning=FALSE,comment=NA}</span></span>
+<span id="cb31-109"><a href="#cb31-109" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(YYX)</span>
+<span id="cb31-110"><a href="#cb31-110" aria-hidden="true" tabindex="-1"></a>tid1<span class="ot">&lt;-</span>YYX<span class="sc">::</span><span class="fu">time_evaluation</span>(<span class="st">"a&lt;-rnorm(10000000);b&lt;-'YY'"</span>,<span class="dv">1</span>)</span>
+<span id="cb31-111"><a href="#cb31-111" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb31-112"><a href="#cb31-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-113"><a href="#cb31-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-114"><a href="#cb31-114" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="true"}</span>
+<span id="cb31-115"><a href="#cb31-115" aria-hidden="true" tabindex="-1"></a>The code inside is not ran in your global environment, so it will use your memory but not occupy them.</span>
+<span id="cb31-116"><a href="#cb31-116" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=T, message=FALSE,include=T, warning=FALSE,comment=NA}</span></span>
+<span id="cb31-117"><a href="#cb31-117" aria-hidden="true" tabindex="-1"></a><span class="fu">tryCatch</span>({a},</span>
+<span id="cb31-118"><a href="#cb31-118" aria-hidden="true" tabindex="-1"></a>         <span class="at">error=</span><span class="cf">function</span>(e){<span class="fu">cat</span>(<span class="st">"a not found"</span>)})</span>
+<span id="cb31-119"><a href="#cb31-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-120"><a href="#cb31-120" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb31-121"><a href="#cb31-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-122"><a href="#cb31-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-123"><a href="#cb31-123" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-124"><a href="#cb31-124" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>dotplot</span>
+<span id="cb31-125"><a href="#cb31-125" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>histplot</span>
+<span id="cb31-126"><a href="#cb31-126" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>systime_firstime</span>
+<span id="cb31-127"><a href="#cb31-127" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>nanotime_average</span>
+<span id="cb31-128"><a href="#cb31-128" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>nanotime_firstime</span>
+<span id="cb31-129"><a href="#cb31-129" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>systime_average</span>
+<span id="cb31-130"><a href="#cb31-130" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>microbench_firstime</span>
+<span id="cb31-131"><a href="#cb31-131" aria-hidden="true" tabindex="-1"></a>tid1<span class="sc">$</span>microbench_average</span>
+<span id="cb31-132"><a href="#cb31-132" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-133"><a href="#cb31-133" aria-hidden="true" tabindex="-1"></a><span class="fu">## time_evaluation() example 2</span></span>
+<span id="cb31-134"><a href="#cb31-134" aria-hidden="true" tabindex="-1"></a><span class="in">```{r tid2, echo=T, message=FALSE,include=T, warning=FALSE,comment=NA}</span></span>
+<span id="cb31-135"><a href="#cb31-135" aria-hidden="true" tabindex="-1"></a><span class="do">## This is to open my shiny app</span></span>
+<span id="cb31-136"><a href="#cb31-136" aria-hidden="true" tabindex="-1"></a><span class="do">## remotes::install_gitlab("YingxiaoYan/TriplotGUI")</span></span>
+<span id="cb31-137"><a href="#cb31-137" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(TriplotGUI)</span>
+<span id="cb31-138"><a href="#cb31-138" aria-hidden="true" tabindex="-1"></a>tid2<span class="ot">&lt;-</span>YYX<span class="sc">::</span><span class="fu">time_evaluation</span>(<span class="st">"TriplotGUI::TriplotGUI_shiny()"</span>,<span class="dv">1</span>)</span>
+<span id="cb31-139"><a href="#cb31-139" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb31-140"><a href="#cb31-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-141"><a href="#cb31-141" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=F, message=FALSE, include=T, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-142"><a href="#cb31-142" aria-hidden="true" tabindex="-1"></a>tid2<span class="sc">$</span>dotplot</span>
+<span id="cb31-143"><a href="#cb31-143" aria-hidden="true" tabindex="-1"></a>tid2<span class="sc">$</span>histplot</span>
+<span id="cb31-144"><a href="#cb31-144" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-145"><a href="#cb31-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-146"><a href="#cb31-146" aria-hidden="true" tabindex="-1"></a><span class="fu"># Parallization problem</span></span>
+<span id="cb31-147"><a href="#cb31-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-148"><a href="#cb31-148" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I want to have a function to modify my ordinary for loop code for parallelizarion (to automatically reformat the code to fit for how you write loops when using doParallel or future package)</span></span>
+<span id="cb31-149"><a href="#cb31-149" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb31-150"><a href="#cb31-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-151"><a href="#cb31-151" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example of how you write loops in three scenario</span></span>
+<span id="cb31-152"><a href="#cb31-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-153"><a href="#cb31-153" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>ordinary:</span>
+<span id="cb31-154"><a href="#cb31-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-155"><a href="#cb31-155" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-156"><a href="#cb31-156" aria-hidden="true" tabindex="-1"></a><span class="co">#code_to_text</span></span>
+<span id="cb31-157"><a href="#cb31-157" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb31-158"><a href="#cb31-158" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){aa[i]<span class="ot">&lt;-</span>i;bb[[i]]<span class="ot">&lt;-</span><span class="fu">c</span>(i,i<span class="sc">+</span><span class="dv">1</span>,i<span class="sc">+</span><span class="dv">3</span>)}</span>
+<span id="cb31-159"><a href="#cb31-159" aria-hidden="true" tabindex="-1"></a>aa</span>
+<span id="cb31-160"><a href="#cb31-160" aria-hidden="true" tabindex="-1"></a>bb</span>
+<span id="cb31-161"><a href="#cb31-161" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-162"><a href="#cb31-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-163"><a href="#cb31-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-164"><a href="#cb31-164" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>doParallel way</span>
+<span id="cb31-165"><a href="#cb31-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-166"><a href="#cb31-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r foreach_ex, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-167"><a href="#cb31-167" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(doParallel)</span>
+<span id="cb31-168"><a href="#cb31-168" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb31-169"><a href="#cb31-169" aria-hidden="true" tabindex="-1"></a>num_cores <span class="ot">&lt;-</span> <span class="fu">detectCores</span>() <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb31-170"><a href="#cb31-170" aria-hidden="true" tabindex="-1"></a>cl <span class="ot">&lt;-</span> <span class="fu">makeCluster</span>(num_cores) <span class="co"># Init cluster</span></span>
+<span id="cb31-171"><a href="#cb31-171" aria-hidden="true" tabindex="-1"></a><span class="fu">registerDoParallel</span>(cl)</span>
+<span id="cb31-172"><a href="#cb31-172" aria-hidden="true" tabindex="-1"></a><span class="st">"%doVersion%"</span> <span class="ot">&lt;-</span> <span class="fu">get</span>(<span class="st">"%dopar%"</span>)</span>
+<span id="cb31-173"><a href="#cb31-173" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) <span class="sc">%doVersion%</span> {</span>
+<span id="cb31-174"><a href="#cb31-174" aria-hidden="true" tabindex="-1"></a>  aa <span class="ot">&lt;-</span> i</span>
+<span id="cb31-175"><a href="#cb31-175" aria-hidden="true" tabindex="-1"></a>  bb <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i <span class="sc">+</span> <span class="dv">1</span>, i <span class="sc">+</span> <span class="dv">3</span>)</span>
+<span id="cb31-176"><a href="#cb31-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(aa, bb))</span>
+<span id="cb31-177"><a href="#cb31-177" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-178"><a href="#cb31-178" aria-hidden="true" tabindex="-1"></a><span class="fu">stopCluster</span>(cl)</span>
+<span id="cb31-179"><a href="#cb31-179" aria-hidden="true" tabindex="-1"></a><span class="co">#cc becomes a list contain aa and bb</span></span>
+<span id="cb31-180"><a href="#cb31-180" aria-hidden="true" tabindex="-1"></a>cc</span>
+<span id="cb31-181"><a href="#cb31-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-182"><a href="#cb31-182" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-183"><a href="#cb31-183" aria-hidden="true" tabindex="-1"></a>-future</span>
+<span id="cb31-184"><a href="#cb31-184" aria-hidden="true" tabindex="-1"></a><span class="in">```{r future_ex, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-185"><a href="#cb31-185" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(future)</span>
+<span id="cb31-186"><a href="#cb31-186" aria-hidden="true" tabindex="-1"></a> <span class="fu">plan</span>(multisession);</span>
+<span id="cb31-187"><a href="#cb31-187" aria-hidden="true" tabindex="-1"></a> aa<span class="ot">&lt;-</span><span class="fu">c</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb31-188"><a href="#cb31-188" aria-hidden="true" tabindex="-1"></a> new_env <span class="ot">&lt;-</span> <span class="fu">new.env</span>(); </span>
+<span id="cb31-189"><a href="#cb31-189" aria-hidden="true" tabindex="-1"></a> <span class="cf">for</span>(i  <span class="cf">in</span> <span class="fu">c</span>( <span class="st">'1'</span>,<span class="st">'2'</span>,<span class="st">'3'</span>,<span class="st">'4'</span>,<span class="st">'5'</span> )){ </span>
+<span id="cb31-190"><a href="#cb31-190" aria-hidden="true" tabindex="-1"></a>   new_env[[ i ]] <span class="sc">%&lt;-%</span>{ </span>
+<span id="cb31-191"><a href="#cb31-191" aria-hidden="true" tabindex="-1"></a>     aa<span class="ot">&lt;-</span>i;bb<span class="ot">&lt;-</span><span class="fu">c</span>(i,i,i);</span>
+<span id="cb31-192"><a href="#cb31-192" aria-hidden="true" tabindex="-1"></a>      <span class="fu">list</span>(aa,bb)} }; </span>
+<span id="cb31-193"><a href="#cb31-193" aria-hidden="true" tabindex="-1"></a> new_env <span class="ot">&lt;-</span> <span class="fu">as.list</span>(new_env);</span>
+<span id="cb31-194"><a href="#cb31-194" aria-hidden="true" tabindex="-1"></a> new_env</span>
+<span id="cb31-195"><a href="#cb31-195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-196"><a href="#cb31-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-197"><a href="#cb31-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-198"><a href="#cb31-198" aria-hidden="true" tabindex="-1"></a><span class="fu">## Intention</span></span>
+<span id="cb31-199"><a href="#cb31-199" aria-hidden="true" tabindex="-1"></a><span class="in">```{r , echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-200"><a href="#cb31-200" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
+<span id="cb31-201"><a href="#cb31-201" aria-hidden="true" tabindex="-1"></a>  aa[i] <span class="ot">&lt;-</span> i</span>
+<span id="cb31-202"><a href="#cb31-202" aria-hidden="true" tabindex="-1"></a>  bb[[i]] <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i, i)</span>
+<span id="cb31-203"><a href="#cb31-203" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-204"><a href="#cb31-204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-205"><a href="#cb31-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-206"><a href="#cb31-206" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 1.--&gt; To doParallel format</span></span>
+<span id="cb31-207"><a href="#cb31-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-208"><a href="#cb31-208" aria-hidden="true" tabindex="-1"></a><span class="in">```{r , echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-209"><a href="#cb31-209" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> <span class="fu">foreach</span>(<span class="at">i =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) <span class="sc">%dopar%</span> {</span>
+<span id="cb31-210"><a href="#cb31-210" aria-hidden="true" tabindex="-1"></a>  aa <span class="ot">&lt;-</span> i</span>
+<span id="cb31-211"><a href="#cb31-211" aria-hidden="true" tabindex="-1"></a>  bb <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i, i)</span>
+<span id="cb31-212"><a href="#cb31-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(aa, bb))</span>
+<span id="cb31-213"><a href="#cb31-213" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-214"><a href="#cb31-214" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-215"><a href="#cb31-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-216"><a href="#cb31-216" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 2.--&gt; To future format (From Sebastian's lab)</span></span>
+<span id="cb31-217"><a href="#cb31-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-218"><a href="#cb31-218" aria-hidden="true" tabindex="-1"></a><span class="in">```{r , echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-219"><a href="#cb31-219" aria-hidden="true" tabindex="-1"></a> <span class="fu">plan</span>(multisession);</span>
+<span id="cb31-220"><a href="#cb31-220" aria-hidden="true" tabindex="-1"></a>new_env <span class="ot">&lt;-</span> <span class="fu">new.env</span>();</span>
+<span id="cb31-221"><a href="#cb31-221" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i  <span class="cf">in</span> <span class="fu">c</span>(<span class="st">'1'</span>, <span class="st">'2'</span>, <span class="st">'3'</span>, <span class="st">'4'</span>, <span class="st">'5'</span>)) {</span>
+<span id="cb31-222"><a href="#cb31-222" aria-hidden="true" tabindex="-1"></a>  new_env[[i]] <span class="sc">%&lt;-%</span> {</span>
+<span id="cb31-223"><a href="#cb31-223" aria-hidden="true" tabindex="-1"></a>    aa <span class="ot">&lt;-</span> i</span>
+<span id="cb31-224"><a href="#cb31-224" aria-hidden="true" tabindex="-1"></a>    bb <span class="ot">&lt;-</span> <span class="fu">c</span>(i, i, i)</span>
+<span id="cb31-225"><a href="#cb31-225" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-226"><a href="#cb31-226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(items))</span>
+<span id="cb31-227"><a href="#cb31-227" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-228"><a href="#cb31-228" aria-hidden="true" tabindex="-1"></a>new_env <span class="ot">&lt;-</span> <span class="fu">as.list</span>(new_env)</span>
+<span id="cb31-229"><a href="#cb31-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-230"><a href="#cb31-230" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-231"><a href="#cb31-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-232"><a href="#cb31-232" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color: red"</span><span class="kw">&gt;</span></span>
+<span id="cb31-233"><a href="#cb31-233" aria-hidden="true" tabindex="-1"></a>I haven't figure out how to transform the text and **RUN** </span>
+<span id="cb31-234"><a href="#cb31-234" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span>
+<span id="cb31-235"><a href="#cb31-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-236"><a href="#cb31-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-237"><a href="#cb31-237" aria-hidden="true" tabindex="-1"></a><span class="fu">## test with transform_looptext_to_doParallel</span></span>
+<span id="cb31-238"><a href="#cb31-238" aria-hidden="true" tabindex="-1"></a><span class="in">```{r parallel, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-239"><a href="#cb31-239" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb31-240"><a href="#cb31-240" aria-hidden="true" tabindex="-1"></a>cc<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">5</span>)</span>
+<span id="cb31-241"><a href="#cb31-241" aria-hidden="true" tabindex="-1"></a>code<span class="ot">=</span><span class="st">"for(i in 1:5){aa[i]&lt;-i;bb[[i]]&lt;-c(i,i,i);</span></span>
+<span id="cb31-242"><a href="#cb31-242" aria-hidden="true" tabindex="-1"></a><span class="st">       }"</span></span>
+<span id="cb31-243"><a href="#cb31-243" aria-hidden="true" tabindex="-1"></a><span class="fu">transform_loop_text_doParallel</span>(code)</span>
+<span id="cb31-244"><a href="#cb31-244" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-245"><a href="#cb31-245" aria-hidden="true" tabindex="-1"></a><span class="fu">## test with transform_looptext_to_future</span></span>
+<span id="cb31-246"><a href="#cb31-246" aria-hidden="true" tabindex="-1"></a><span class="in">```{r future, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-247"><a href="#cb31-247" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(future)</span>
+<span id="cb31-248"><a href="#cb31-248" aria-hidden="true" tabindex="-1"></a>aa<span class="ot">&lt;-</span><span class="fu">vector</span>(); bb<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb31-249"><a href="#cb31-249" aria-hidden="true" tabindex="-1"></a>cc<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">5</span>)</span>
+<span id="cb31-250"><a href="#cb31-250" aria-hidden="true" tabindex="-1"></a>code<span class="ot">=</span><span class="st">"for(i in 1:5){aa[i]&lt;-i;bb[[i]]&lt;-c(i,i,i);</span></span>
+<span id="cb31-251"><a href="#cb31-251" aria-hidden="true" tabindex="-1"></a><span class="st">       }"</span></span>
+<span id="cb31-252"><a href="#cb31-252" aria-hidden="true" tabindex="-1"></a><span class="fu">transform_loop_text_future</span>(code)</span>
+<span id="cb31-253"><a href="#cb31-253" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-254"><a href="#cb31-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-255"><a href="#cb31-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-256"><a href="#cb31-256" aria-hidden="true" tabindex="-1"></a><span class="fu"># memory calculation</span></span>
+<span id="cb31-257"><a href="#cb31-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-258"><a href="#cb31-258" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I want to have a convenience function to calculate how many memeory I will occupy with out running them in my global environment.</span></span>
+<span id="cb31-259"><a href="#cb31-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-260"><a href="#cb31-260" aria-hidden="true" tabindex="-1"></a><span class="fu">## the pryr::mem_change() way</span></span>
+<span id="cb31-261"><a href="#cb31-261" aria-hidden="true" tabindex="-1"></a><span class="in">```{r memory2, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-262"><a href="#cb31-262" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(peakRAM)</span>
+<span id="cb31-263"><a href="#cb31-263" aria-hidden="true" tabindex="-1"></a>code<span class="ot">&lt;-</span><span class="st">"abcd&lt;-rnorm(10000000)"</span></span>
+<span id="cb31-264"><a href="#cb31-264" aria-hidden="true" tabindex="-1"></a><span class="fu">memory_evaluation</span>(code)</span>
+<span id="cb31-265"><a href="#cb31-265" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-266"><a href="#cb31-266" aria-hidden="true" tabindex="-1"></a><span class="fu">## the peakRAM way</span></span>
+<span id="cb31-267"><a href="#cb31-267" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-268"><a href="#cb31-268" aria-hidden="true" tabindex="-1"></a>code<span class="ot">&lt;-</span><span class="st">"abcd&lt;-rnorm(10000000)"</span></span>
+<span id="cb31-269"><a href="#cb31-269" aria-hidden="true" tabindex="-1"></a><span class="fu">memory_evaluation</span>(code,<span class="at">option=</span><span class="st">"peakRAM"</span>)</span>
+<span id="cb31-270"><a href="#cb31-270" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-271"><a href="#cb31-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-272"><a href="#cb31-272" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">peakRam</span><span class="co">](https://www.rdocumentation.org/packages/peakRAM/versions/1.0.2)</span></span>
+<span id="cb31-273"><a href="#cb31-273" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Hadley book</span><span class="co">](http://adv-r.had.co.nz/memory.html)</span></span>
+<span id="cb31-274"><a href="#cb31-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-275"><a href="#cb31-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-276"><a href="#cb31-276" aria-hidden="true" tabindex="-1"></a><span class="fu"># ignoring error</span></span>
+<span id="cb31-277"><a href="#cb31-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-278"><a href="#cb31-278" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; I want to run my machine learning algorithm on 400 simulated data (through 400 loops). When sometimes an error occurs, I know it is because the data is simulated to the extreme scenario...</span></span>
+<span id="cb31-279"><a href="#cb31-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-280"><a href="#cb31-280" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;I don't care about the loop that has error. if an error occurs, I want to ignore that loop and restart that loop (with data simulation)   </span></span>
+<span id="cb31-281"><a href="#cb31-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-282"><a href="#cb31-282" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-283"><a href="#cb31-283" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MUVR)</span>
+<span id="cb31-284"><a href="#cb31-284" aria-hidden="true" tabindex="-1"></a>rep<span class="ot">=</span><span class="dv">2</span></span>
+<span id="cb31-285"><a href="#cb31-285" aria-hidden="true" tabindex="-1"></a>trick<span class="ot">=</span><span class="dv">6</span></span>
+<span id="cb31-286"><a href="#cb31-286" aria-hidden="true" tabindex="-1"></a>dataX<span class="ot">=</span>Xotu</span>
+<span id="cb31-287"><a href="#cb31-287" aria-hidden="true" tabindex="-1"></a>dataY<span class="ot">=</span>Yotu</span>
+<span id="cb31-288"><a href="#cb31-288" aria-hidden="true" tabindex="-1"></a>empty_name<span class="ot">&lt;-</span><span class="st">"vector_1&lt;-vector()</span></span>
+<span id="cb31-289"><a href="#cb31-289" aria-hidden="true" tabindex="-1"></a><span class="st">            vector_2&lt;-vector()"</span></span>
+<span id="cb31-290"><a href="#cb31-290" aria-hidden="true" tabindex="-1"></a>some_operation_before<span class="ot">&lt;-</span><span class="st">"dataYPerm = sample(dataY)"</span></span>
+<span id="cb31-291"><a href="#cb31-291" aria-hidden="true" tabindex="-1"></a>main_function<span class="ot">&lt;-</span><span class="st">"perm=MUVR(X=dataX,Y=dataYPerm,method='RF',</span></span>
+<span id="cb31-292"><a href="#cb31-292" aria-hidden="true" tabindex="-1"></a><span class="st">                DA=T, modReturn = T, nRep =trick, nOuter=3,varRatio=0.3)</span></span>
+<span id="cb31-293"><a href="#cb31-293" aria-hidden="true" tabindex="-1"></a><span class="st">               if(rep==sample(c(1:2),1)){trick=trick-1; stop('deliberatly give error')}"</span></span>
+<span id="cb31-294"><a href="#cb31-294" aria-hidden="true" tabindex="-1"></a>record_values<span class="ot">&lt;-</span><span class="st">"vector_1&lt;- c(vector_1,perm$ber['min'])</span></span>
+<span id="cb31-295"><a href="#cb31-295" aria-hidden="true" tabindex="-1"></a><span class="st">vector_2&lt;- c(vector_2,perm$miss['min'])"</span></span>
+<span id="cb31-296"><a href="#cb31-296" aria-hidden="true" tabindex="-1"></a>output<span class="ot">&lt;-</span><span class="st">"list(vector_1,vector_2)"</span></span>
+<span id="cb31-297"><a href="#cb31-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-298"><a href="#cb31-298" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-299"><a href="#cb31-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-300"><a href="#cb31-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-301"><a href="#cb31-301" aria-hidden="true" tabindex="-1"></a>:::{.callout-note collapse="true"}</span>
+<span id="cb31-302"><a href="#cb31-302" aria-hidden="true" tabindex="-1"></a>When I put everything in the function and run them, the vector only record the value given by the last loop.</span>
+<span id="cb31-303"><a href="#cb31-303" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-304"><a href="#cb31-304" aria-hidden="true" tabindex="-1"></a>ignore_loop_error <span class="ot">&lt;-</span> <span class="cf">function</span>(rep,</span>
+<span id="cb31-305"><a href="#cb31-305" aria-hidden="true" tabindex="-1"></a>                              empty_name,</span>
+<span id="cb31-306"><a href="#cb31-306" aria-hidden="true" tabindex="-1"></a>                              <span class="at">some_operation_before =</span> <span class="cn">NULL</span>,</span>
+<span id="cb31-307"><a href="#cb31-307" aria-hidden="true" tabindex="-1"></a>                              main_function,</span>
+<span id="cb31-308"><a href="#cb31-308" aria-hidden="true" tabindex="-1"></a>                              record_values,</span>
+<span id="cb31-309"><a href="#cb31-309" aria-hidden="true" tabindex="-1"></a>                              <span class="at">some_operation_after =</span> <span class="cn">NULL</span>,</span>
+<span id="cb31-310"><a href="#cb31-310" aria-hidden="true" tabindex="-1"></a>                              output) {</span>
+<span id="cb31-311"><a href="#cb31-311" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb31-312"><a href="#cb31-312" aria-hidden="true" tabindex="-1"></a>  pp <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb31-313"><a href="#cb31-313" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb31-314"><a href="#cb31-314" aria-hidden="true" tabindex="-1"></a>  <span class="do">########################################</span></span>
+<span id="cb31-315"><a href="#cb31-315" aria-hidden="true" tabindex="-1"></a>  <span class="do">#### empty name</span></span>
+<span id="cb31-316"><a href="#cb31-316" aria-hidden="true" tabindex="-1"></a>  <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(empty_name)))</span>
+<span id="cb31-317"><a href="#cb31-317" aria-hidden="true" tabindex="-1"></a>  <span class="do">##############################################</span></span>
+<span id="cb31-318"><a href="#cb31-318" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (pp <span class="sc">&lt;=</span> rep) {</span>
+<span id="cb31-319"><a href="#cb31-319" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> pp</span>
+<span id="cb31-320"><a href="#cb31-320" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"/loop"</span>, pp, <span class="st">"of"</span>, rep)</span>
+<span id="cb31-321"><a href="#cb31-321" aria-hidden="true" tabindex="-1"></a>    <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(some_operation_before)))</span>
+<span id="cb31-322"><a href="#cb31-322" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tryCatch</span>({</span>
+<span id="cb31-323"><a href="#cb31-323" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p</span>
+<span id="cb31-324"><a href="#cb31-324" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(main_function)))</span>
+<span id="cb31-325"><a href="#cb31-325" aria-hidden="true" tabindex="-1"></a>      <span class="do">##############################</span></span>
+<span id="cb31-326"><a href="#cb31-326" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb31-327"><a href="#cb31-327" aria-hidden="true" tabindex="-1"></a>      <span class="do">#####################################</span></span>
+<span id="cb31-328"><a href="#cb31-328" aria-hidden="true" tabindex="-1"></a>    }, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
+<span id="cb31-329"><a href="#cb31-329" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb31-330"><a href="#cb31-330" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (pp <span class="sc">==</span> p <span class="sc">+</span> <span class="dv">1</span>) {</span>
+<span id="cb31-331"><a href="#cb31-331" aria-hidden="true" tabindex="-1"></a>      <span class="do">## recording</span></span>
+<span id="cb31-332"><a href="#cb31-332" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(record_values)))</span>
+<span id="cb31-333"><a href="#cb31-333" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb31-334"><a href="#cb31-334" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-335"><a href="#cb31-335" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output))))) {</span>
+<span id="cb31-336"><a href="#cb31-336" aria-hidden="true" tabindex="-1"></a>    result[[i]] <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output)))[[i]]</span>
+<span id="cb31-337"><a href="#cb31-337" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-338"><a href="#cb31-338" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"c('"</span>, <span class="fu">substr</span>(output, <span class="at">start =</span> <span class="dv">6</span>, <span class="at">stop =</span> <span class="fu">nchar</span>(output) <span class="sc">-</span></span>
+<span id="cb31-339"><a href="#cb31-339" aria-hidden="true" tabindex="-1"></a>                                <span class="dv">1</span>), <span class="st">"')"</span>)</span>
+<span id="cb31-340"><a href="#cb31-340" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">change_name</span>(text, <span class="st">","</span>, <span class="st">"','"</span>)</span>
+<span id="cb31-341"><a href="#cb31-341" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(<span class="fu">names</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(</span>
+<span id="cb31-342"><a href="#cb31-342" aria-hidden="true" tabindex="-1"></a>    output</span>
+<span id="cb31-343"><a href="#cb31-343" aria-hidden="true" tabindex="-1"></a>  )))))) {</span>
+<span id="cb31-344"><a href="#cb31-344" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(result) <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> text))</span>
+<span id="cb31-345"><a href="#cb31-345" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-346"><a href="#cb31-346" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb31-347"><a href="#cb31-347" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-348"><a href="#cb31-348" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-349"><a href="#cb31-349" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb31-350"><a href="#cb31-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-351"><a href="#cb31-351" aria-hidden="true" tabindex="-1"></a>When I use the code outside function, it works.</span>
+<span id="cb31-352"><a href="#cb31-352" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ignore_loop,echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}</span></span>
+<span id="cb31-353"><a href="#cb31-353" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb31-354"><a href="#cb31-354" aria-hidden="true" tabindex="-1"></a>  pp <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb31-355"><a href="#cb31-355" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb31-356"><a href="#cb31-356" aria-hidden="true" tabindex="-1"></a>  <span class="do">########################################</span></span>
+<span id="cb31-357"><a href="#cb31-357" aria-hidden="true" tabindex="-1"></a>  <span class="do">#### empty name</span></span>
+<span id="cb31-358"><a href="#cb31-358" aria-hidden="true" tabindex="-1"></a>  <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(empty_name)))</span>
+<span id="cb31-359"><a href="#cb31-359" aria-hidden="true" tabindex="-1"></a>  <span class="do">##############################################</span></span>
+<span id="cb31-360"><a href="#cb31-360" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (pp <span class="sc">&lt;=</span> rep) {</span>
+<span id="cb31-361"><a href="#cb31-361" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> pp</span>
+<span id="cb31-362"><a href="#cb31-362" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"/loop"</span>, pp, <span class="st">"of"</span>, rep)</span>
+<span id="cb31-363"><a href="#cb31-363" aria-hidden="true" tabindex="-1"></a>    <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(some_operation_before)))</span>
+<span id="cb31-364"><a href="#cb31-364" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tryCatch</span>({</span>
+<span id="cb31-365"><a href="#cb31-365" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p</span>
+<span id="cb31-366"><a href="#cb31-366" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(main_function)))</span>
+<span id="cb31-367"><a href="#cb31-367" aria-hidden="true" tabindex="-1"></a>      <span class="do">##############################</span></span>
+<span id="cb31-368"><a href="#cb31-368" aria-hidden="true" tabindex="-1"></a>      pp <span class="ot">&lt;-</span> p <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb31-369"><a href="#cb31-369" aria-hidden="true" tabindex="-1"></a>      <span class="do">#####################################</span></span>
+<span id="cb31-370"><a href="#cb31-370" aria-hidden="true" tabindex="-1"></a>    }, <span class="at">error =</span> <span class="cf">function</span>(e) {</span>
+<span id="cb31-371"><a href="#cb31-371" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb31-372"><a href="#cb31-372" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (pp <span class="sc">==</span> p <span class="sc">+</span> <span class="dv">1</span>) {</span>
+<span id="cb31-373"><a href="#cb31-373" aria-hidden="true" tabindex="-1"></a>      <span class="do">## recording</span></span>
+<span id="cb31-374"><a href="#cb31-374" aria-hidden="true" tabindex="-1"></a>      <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(record_values)))</span>
+<span id="cb31-375"><a href="#cb31-375" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb31-376"><a href="#cb31-376" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-377"><a href="#cb31-377" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output))))) {</span>
+<span id="cb31-378"><a href="#cb31-378" aria-hidden="true" tabindex="-1"></a>    result[[i]] <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(output)))[[i]]</span>
+<span id="cb31-379"><a href="#cb31-379" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-380"><a href="#cb31-380" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">paste0</span>(<span class="st">"c('"</span>, <span class="fu">substr</span>(output, <span class="at">start =</span> <span class="dv">6</span>, <span class="at">stop =</span> <span class="fu">nchar</span>(output) <span class="sc">-</span></span>
+<span id="cb31-381"><a href="#cb31-381" aria-hidden="true" tabindex="-1"></a>                                <span class="dv">1</span>), <span class="st">"')"</span>)</span>
+<span id="cb31-382"><a href="#cb31-382" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">=</span> <span class="fu">change_name</span>(text, <span class="st">","</span>, <span class="st">"','"</span>)</span>
+<span id="cb31-383"><a href="#cb31-383" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(<span class="fu">names</span>(<span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> <span class="fu">paste</span>(</span>
+<span id="cb31-384"><a href="#cb31-384" aria-hidden="true" tabindex="-1"></a>    output</span>
+<span id="cb31-385"><a href="#cb31-385" aria-hidden="true" tabindex="-1"></a>  )))))) {</span>
+<span id="cb31-386"><a href="#cb31-386" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(result) <span class="ot">&lt;-</span> <span class="fu">eval</span>(<span class="fu">parse</span>(<span class="at">text =</span> text))</span>
+<span id="cb31-387"><a href="#cb31-387" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-388"><a href="#cb31-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-389"><a href="#cb31-389" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb31-390"><a href="#cb31-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-391"><a href="#cb31-391" aria-hidden="true" tabindex="-1"></a>::: {.callout-note collapse="true"}</span>
+<span id="cb31-392"><a href="#cb31-392" aria-hidden="true" tabindex="-1"></a>The eval(parse()) way can be messy when it is tangled with many loops. Don't use it to build functions if several eval(parse()) at different loops.</span>
+<span id="cb31-393"><a href="#cb31-393" aria-hidden="true" tabindex="-1"></a>::: </span>
+<span id="cb31-394"><a href="#cb31-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-395"><a href="#cb31-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-396"><a href="#cb31-396" aria-hidden="true" tabindex="-1"></a>The end</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

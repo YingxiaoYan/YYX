@@ -1,0 +1,396 @@
+---
+title: "A package with some functions/code that may be convenient"
+subtitle: "for time evaluation, memory usage, parallization, ignore error in loops"
+author: "Yingxiao Yan"
+date: last-modified
+date-format: "DD-MMM-YYYY"
+params:
+  name: setosa
+format: 
+  html:
+    highlight: tango
+    toc:  true  ## automaticlly generate table of contente
+    toc-depth: 4  ## specify the number of section levels to include in the table of contents
+    toc-location: left  ##default right
+    smooth-scroll:  true  ### when you click on the table of content, how did what you see move
+    number-sections: true  ## add number in the session or not
+    number-depth: 4
+    title-block-banner: true  ## add a banner for the quarto
+    code-fold: true  ## fold the code
+    code-tools: true   ## a bar for code 
+    code-copy: true  ##   adds a copy icon in the code chunk and
+    code-overflow: wrap  ## when the code lines are too wide for container
+    df-print: paged  ## kable is another option How the dataframe looks like 
+    standalone: false  ### specifies if all assets and libraries must be integrated into the output html file as a standalone document.
+    fig-align: right
+    theme:  solar
+    bg: '#121212'
+    fg: '#E4E4E4'
+
+geometry: margin=lin
+description: >
+  Not all my purpose is achieved.
+execute:
+  freeze: auto
+---
+
+```{r, include=FALSE}
+##This is a function that combines html and rmarkdown. It aims to generate a button that could hide output or plot (fold.output=T or fold.plot=T).
+hooks = knitr::knit_hooks$get()
+hook_foldable = function(type) {
+  force(type)
+  function(x, options) {
+    res = hooks[[type]](x, options)
+    
+    if (!isTRUE(options[[paste0("fold.", type)]])) return(res)
+    
+    paste0(
+      "<details><summary>", type, "</summary>\n\n",
+      res,
+      "\n\n</details>"
+    )
+  }
+}
+knitr::knit_hooks$set(
+  output = hook_foldable("output"),
+  plot = hook_foldable("plot")
+)
+```
+
+```{r wrap-hook, echo=F,message=FALSE, warning=FALSE,comment=NA,linewidth=100}
+library(knitr)
+hook_output = knit_hooks$get('output')
+knit_hooks$set(output = function(x, options) {
+  # this hook is used only when the linewidth option is not NULL
+  if (!is.null(n <- options$linewidth)) {
+    x = knitr:::split_lines(x)
+    # any lines wider than n should be wrapped
+    if (any(nchar(x) > n)) x = strwrap(x, width = n)
+    x = paste(x, collapse = '\n')
+  }
+  hook_output(x, options)
+})
+```
+
+# Aim & intro
+
+## Aim
+
+**The aim of what I do is to provide some convenience function regarding calculating running time, memory usage, parallelization and treating error for my other functions.**([MUVR](https://gitlab.com/CarlBrunius/MUVR/-/tree/MUVR2?ref_type=heads), [TriplotGUI](https://gitlab.com/YingxiaoYan/triplotgui))
+
+## key stuff used
+- eval(parse()) 
+- system.time(), get_nanotime(), microbenchmark(), Rprof()
+- peakRAM(), gc()
+- the way to write code using future and doParallel 
+- tryCatch({})
+
+## functions()/code in this package
+- time_evaluation()
+- memory_evaluation()
+- transform_looptext_to_doParallel(), transform_looptext_to_future()
+- ignore_loop_error
+- supporting functions: str_paste0(), find_identical_strings(),change_name()
+
+## Some description for exisiting function used in examples 
+
+MUVR::MUVR(): Perform variable selection and prediction in repeated nested cross-validation 
+
+TriplotGUI::TriplotGUIshiny(): The function that opens my shiny app, which do some stuff(doesn't matter here)
+
+# Time estimation
+
+> I want to run some code and test the time needed without running it in my global environment.  
+> 
+
+## time_evaluation() example 1
+
+```{r tid1, echo=T, message=FALSE,include=T, warning=FALSE,comment=NA}
+library(YYX)
+tid1<-YYX::time_evaluation("a<-rnorm(10000000);b<-'YY'",1)
+    
+```
+
+::: {.callout-note collapse="true"}
+The code inside is not ran in your global environment, so it will use your memory but not occupy them.
+```{r echo=T, message=FALSE,include=T, warning=FALSE,comment=NA}
+tryCatch({a},
+         error=function(e){cat("a not found")})
+```
+:::
+
+
+```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+tid1$dotplot
+tid1$histplot
+tid1$systime_firstime
+tid1$nanotime_average
+tid1$nanotime_firstime
+tid1$systime_average
+tid1$microbench_firstime
+tid1$microbench_average
+```
+## time_evaluation() example 2
+```{r tid2, echo=T, message=FALSE,include=T, warning=FALSE,comment=NA}
+## This is to open my shiny app
+## remotes::install_gitlab("YingxiaoYan/TriplotGUI")
+library(TriplotGUI)
+tid2<-YYX::time_evaluation("TriplotGUI::TriplotGUI_shiny()",1)
+    
+```
+```{r echo=F, message=FALSE, include=T, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+tid2$dotplot
+tid2$histplot
+```
+
+# Parallization problem
+
+> I want to have a function to modify my ordinary for loop code for parallelizarion (to automatically reformat the code to fit for how you write loops when using doParallel or future package)
+> 
+
+## Example of how you write loops in three scenario
+
+- ordinary:
+
+```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+#code_to_text
+aa<-vector(); bb<-list()
+for(i in 1:5){aa[i]<-i;bb[[i]]<-c(i,i+1,i+3)}
+aa
+bb
+```
+
+
+- doParallel way
+
+```{r foreach_ex, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+library(doParallel)
+aa<-vector(); bb<-list()
+num_cores <- detectCores() - 1
+cl <- makeCluster(num_cores) # Init cluster
+registerDoParallel(cl)
+"%doVersion%" <- get("%dopar%")
+cc <- foreach(i = 1:5) %doVersion% {
+  aa <- i
+  bb <- c(i, i + 1, i + 3)
+  return(list(aa, bb))
+}
+stopCluster(cl)
+#cc becomes a list contain aa and bb
+cc
+
+```
+-future
+```{r future_ex, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+library(future)
+ plan(multisession);
+ aa<-c(); bb<-list()
+ new_env <- new.env(); 
+ for(i  in c( '1','2','3','4','5' )){ 
+   new_env[[ i ]] %<-%{ 
+     aa<-i;bb<-c(i,i,i);
+      list(aa,bb)} }; 
+ new_env <- as.list(new_env);
+ new_env
+```
+
+
+## Intention
+```{r , echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+for(i in 1:5) {
+  aa[i] <- i
+  bb[[i]] <- c(i, i, i)
+}
+```
+
+> 1.--> To doParallel format
+
+```{r , echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+cc <- foreach(i = 1:5) %dopar% {
+  aa <- i
+  bb <- c(i, i, i)
+  return(list(aa, bb))
+}
+```
+
+> 2.--> To future format (From Sebastian's lab)
+
+```{r , echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+ plan(multisession);
+new_env <- new.env();
+for (i  in c('1', '2', '3', '4', '5')) {
+  new_env[[i]] %<-% {
+    aa <- i
+    bb <- c(i, i, i)
+  }
+  return(list(aa,bb))
+}
+new_env <- as.list(new_env)
+
+```
+
+<div style="color: red">
+I haven't figure out how to transform the text and **RUN** 
+</div>
+
+
+## test with transform_looptext_to_doParallel
+```{r parallel, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+aa<-vector(); bb<-list()
+cc<-matrix(0,5,5)
+code="for(i in 1:5){aa[i]<-i;bb[[i]]<-c(i,i,i);
+       }"
+transform_loop_text_doParallel(code)
+```
+## test with transform_looptext_to_future
+```{r future, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+library(future)
+aa<-vector(); bb<-list()
+cc<-matrix(0,5,5)
+code="for(i in 1:5){aa[i]<-i;bb[[i]]<-c(i,i,i);
+       }"
+transform_loop_text_future(code)
+```
+
+
+# memory calculation
+
+> I want to have a convenience function to calculate how many memeory I will occupy with out running them in my global environment.
+
+## the pryr::mem_change() way
+```{r memory2, echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+library(peakRAM)
+code<-"abcd<-rnorm(10000000)"
+memory_evaluation(code)
+```
+## the peakRAM way
+```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+code<-"abcd<-rnorm(10000000)"
+memory_evaluation(code,option="peakRAM")
+```
+
+[peakRam](https://www.rdocumentation.org/packages/peakRAM/versions/1.0.2)
+[Hadley book](http://adv-r.had.co.nz/memory.html)
+
+
+# ignoring error
+
+> I want to run my machine learning algorithm on 400 simulated data (through 400 loops). When sometimes an error occurs, I know it is because the data is simulated to the extreme scenario...
+
+>I don't care about the loop that has error. if an error occurs, I want to ignore that loop and restart that loop (with data simulation)   
+
+```{r echo=T, message=FALSE, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+library(MUVR)
+rep=2
+trick=6
+dataX=Xotu
+dataY=Yotu
+empty_name<-"vector_1<-vector()
+            vector_2<-vector()"
+some_operation_before<-"dataYPerm = sample(dataY)"
+main_function<-"perm=MUVR(X=dataX,Y=dataYPerm,method='RF',
+                DA=T, modReturn = T, nRep =trick, nOuter=3,varRatio=0.3)
+               if(rep==sample(c(1:2),1)){trick=trick-1; stop('deliberatly give error')}"
+record_values<-"vector_1<- c(vector_1,perm$ber['min'])
+vector_2<- c(vector_2,perm$miss['min'])"
+output<-"list(vector_1,vector_2)"
+
+```
+
+
+:::{.callout-note collapse="true"}
+When I put everything in the function and run them, the vector only record the value given by the last loop.
+```{r echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+ignore_loop_error <- function(rep,
+                              empty_name,
+                              some_operation_before = NULL,
+                              main_function,
+                              record_values,
+                              some_operation_after = NULL,
+                              output) {
+  result <- list()
+  pp <- 1
+  p <- 1
+  ########################################
+  #### empty name
+  eval(parse(text = paste(empty_name)))
+  ##############################################
+  while (pp <= rep) {
+    p <- pp
+    cat("/loop", pp, "of", rep)
+    eval(parse(text = paste(some_operation_before)))
+    tryCatch({
+      pp <- p
+      eval(parse(text = paste(main_function)))
+      ##############################
+      pp <- p + 1
+      #####################################
+    }, error = function(e) {
+    })
+    if (pp == p + 1) {
+      ## recording
+      eval(parse(text = paste(record_values)))
+    }
+  }
+  for (i in 1:length(eval(parse(text = paste(output))))) {
+    result[[i]] <- eval(parse(text = paste(output)))[[i]]
+  }
+  text = paste0("c('", substr(output, start = 6, stop = nchar(output) -
+                                1), "')")
+  text = change_name(text, ",", "','")
+  if (!is.null(names(eval(parse(text = paste(
+    output
+  )))))) {
+    names(result) <- eval(parse(text = text))
+  }
+  return(result)
+}
+```
+:::
+
+When I use the code outside function, it works.
+```{r ignore_loop,echo=T, message=FALSE,eval=F, warning=FALSE,comment=NA,linewidth=100,results="hold",fig.align='left',fold.plot=T}
+  result <- list()
+  pp <- 1
+  p <- 1
+  ########################################
+  #### empty name
+  eval(parse(text = paste(empty_name)))
+  ##############################################
+  while (pp <= rep) {
+    p <- pp
+    cat("/loop", pp, "of", rep)
+    eval(parse(text = paste(some_operation_before)))
+    tryCatch({
+      pp <- p
+      eval(parse(text = paste(main_function)))
+      ##############################
+      pp <- p + 1
+      #####################################
+    }, error = function(e) {
+    })
+    if (pp == p + 1) {
+      ## recording
+      eval(parse(text = paste(record_values)))
+    }
+  }
+  for (i in 1:length(eval(parse(text = paste(output))))) {
+    result[[i]] <- eval(parse(text = paste(output)))[[i]]
+  }
+  text = paste0("c('", substr(output, start = 6, stop = nchar(output) -
+                                1), "')")
+  text = change_name(text, ",", "','")
+  if (!is.null(names(eval(parse(text = paste(
+    output
+  )))))) {
+    names(result) <- eval(parse(text = text))
+  }
+
+```
+
+::: {.callout-note collapse="true"}
+The eval(parse()) way can be messy when it is tangled with many loops. Don't use it to build functions if several eval(parse()) at different loops.
+::: 
+
+
+The end

@@ -51,7 +51,9 @@ find_identical_strings<-function(x,
       if(specific_char_sep_restr%in%names(position_list_n)){
         position_list_n<-position_list_n[specific_char_sep_restr]
       }else{position_list_n=NULL
-        cat("no match strings")}
+        cat(""
+          #"no match strings"
+          )}
 
   }
 
@@ -108,7 +110,9 @@ find_identical_strings<-function(x,
 
   }
 if(length(position_list_n)==0){
-  cat("There is no matched place")
+  cat(""
+    #"There is no matched place"
+    )
 }else{return(position_list_n)}
 
 }

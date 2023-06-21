@@ -6,10 +6,13 @@
 ## maincode= " for( j  in 1:5 ){  set.seed(1000); qaz[,j]=qwed;qas[j,r]=qrfs;;qwe[[j]]=rnorm(100);qwr[j]=rnorm(1);cat('loop',j)}"
 transform_loop_text_future<-function(x){
   cat(" ")
-a<-menu(c("Yes","No"),
-        graphics = F,
-        "Do you want to stop now and reformat your code a bit?")
-if(a==1){stop("Change your code first.")}
+
+  cat("\nWhen saving output, your code should have format,e.x. a[i]<-1,not a<-c(a,1). \n")
+  cat("Each line in your loop should have a ';'", "\n")
+#a<-menu(c("Yes","No"),
+#        graphics = F,
+#        "Do you want to stop now and reformat your code a bit?")
+#if(a==1){stop("Change your code first.")}
 maincode=x
 ##maincode=change_name(maincode," ","")
 char_sep=strsplit(maincode,"")[[1]]
@@ -123,12 +126,17 @@ char_behind_adjust<-str_paste0(char_behind_adjust)
 
 
 
-char_fu_start<-"plan(multisession);new_env <- new.env();"
-cat("The future code looks like: \n",
-  paste(char_fu_start,"\n",
-        char_infront0," in c(",char_loopnumber,")){",
-      "new_env[[",char_loopsign,"]] %<-%{" ,char_behind_adjust,"};","\n","new_env <- as.list(new_env);vec <- Reduce(c,new_env)")
-## maincode= " for( j  in 1:5 ){  set.seed(1000); qaz[,j]=qwed;qas[j,r]=qrfs;;qwe[[j]]=rnorm(100);qwr[j]=rnorm(1);cat('loop',j)}"
+char_fu_start<-"new_env <- new.env();"
+
+char_brand_new<-paste(char_fu_start,"\n",
+      char_infront0," in c(",char_loopnumber,")){",
+      "new_env[[",char_loopsign,"]] %<-%{" ,char_behind_adjust,";return(list(items))};","\n","new_env <- as.list(new_env);")
+char_brand_new<-str_paste0(char_brand_new)
+char_brand_new<-change_name(char_brand_new,";;",";")
+cat("\nThe future code looks like: \n",char_brand_new,"\n"
+)
+
+cat("\nNote that in your code you will get only one output from each loop. Please adjust your code to put thing you want in the list, replacing items in the end.\n"
 )
 
 
